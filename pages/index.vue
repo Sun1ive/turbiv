@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <app-header />
-    <main>
+    <v-content>
       <app-carousel />
       <app-first />
       <app-second />
@@ -9,7 +9,7 @@
       <app-fourth />
       <app-fifth />
       <app-contacts />
-    </main>
+    </v-content>
     <app-footer />
   </v-app>
 </template>
@@ -41,6 +41,5 @@ export default {
 </script>
 
 <style lang="stylus">
-@import '../styles/global.styl'
-
+@import '../styles/global.styl';
 </style>
