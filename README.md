@@ -1,6 +1,6 @@
 # turbiv
 
-> Landing Turbiv
+> My first-class Nuxt.js project
 
 ## Build Setup
 
