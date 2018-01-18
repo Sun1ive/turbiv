@@ -18,19 +18,19 @@ export default {
   data: () => ({
     items: [
       {
-        src: 'http://via.placeholder.com/1920x1080',
+        src: 'https://via.placeholder.com/1920x1080',
         id: 1,
       },
       {
-        src: 'http://via.placeholder.com/1920x1080',
+        src: 'https://via.placeholder.com/1920x1080',
         id: 2,
       },
       {
-        src: 'http://via.placeholder.com/1920x1080',
+        src: 'https://via.placeholder.com/1920x1080',
         id: 3,
       },
       {
-        src: 'http://via.placeholder.com/1920x1080',
+        src: 'https://via.placeholder.com/1920x1080',
         id: 4,
       },
     ]
