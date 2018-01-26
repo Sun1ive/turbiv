@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid class="second">
+  <v-container fluid class="fifth">
     <v-layout justify-center align-center>
       <v-flex xs12></v-flex>
     </v-layout>

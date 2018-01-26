@@ -1,6 +1,6 @@
-const pkg = require('./package')
-
 const nodeExternals = require('webpack-node-externals')
+
+const pkg = require('./package')
 
 module.exports = {
   mode: 'spa',
@@ -37,7 +37,8 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '@/plugins/vuetify'
+    '@/plugins/vuetify',
+    '@/plugins/vuescrollto'
   ],
 
   /*

@@ -5,7 +5,7 @@
       <app-carousel />
       <app-first />
       <app-second />
-      <app-third />
+      <app-third id="third" />
       <app-fourth />
       <app-fifth />
       <app-contacts />
@@ -41,5 +41,6 @@ export default {
 </script>
 
 <style lang="stylus">
-@import '../styles/global.styl';
+@import '../styles/global.styl'
+
 </style>

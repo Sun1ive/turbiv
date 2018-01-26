@@ -13,6 +13,6 @@ export default {};
 <style lang="stylus" scoped>
 .second
   min-height 500px
-  background-color red + 50%
+  background-color red + 30%
 </style>
 
