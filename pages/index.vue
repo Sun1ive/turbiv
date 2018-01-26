@@ -5,7 +5,7 @@
       <app-carousel />
       <app-first />
       <app-second />
-      <app-third id="third" />
+      <app-third />
       <app-fourth />
       <app-fifth />
       <app-contacts />
