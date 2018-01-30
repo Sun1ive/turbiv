@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid>
+  <v-container fluid id="contact">
     <v-layout justify-space-around align-center>
       <v-flex xs4 class="box">
         <div class="mr-5">
@@ -13,10 +13,9 @@
       <v-flex xs3 class="text-xs-center">
         <v-form>
           <h1>Зв'язок з нами</h1>
-          <v-text-field />
-          <v-text-field />
-          <v-text-field />
-          <v-text-field />
+          <v-text-field label="Ваше имя" />
+          <v-text-field label="Ваш email" />
+          <v-text-field label="Ваш телефон" />
           <v-btn>Click me</v-btn>
         </v-form>
       </v-flex>
@@ -25,6 +24,10 @@
 </template>
 
 <style lang="stylus" scoped>
+.layout
+  min-height 400px
+  background-color #F4F4F4
+
 .box
   display flex
   align-items center

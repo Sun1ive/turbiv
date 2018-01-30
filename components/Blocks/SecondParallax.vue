@@ -1,5 +1,5 @@
 <template>
-  <v-parallax src="9.png" class="third">
+  <v-parallax src="9.png" class="sParallax">
     <v-container>
       <v-layout justify-center align-center>
         <v-flex xs4 class="text-xs-center">
@@ -14,6 +14,5 @@
 <style lang="stylus" scoped>
 .layout
   min-height 500px
-
 </style>
 

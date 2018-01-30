@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid class="first">
+  <v-container fluid class="aboutUs">
     <v-layout justify-center align-center>
       <v-flex xs10 md5>
         <h1>Турбов</h1>

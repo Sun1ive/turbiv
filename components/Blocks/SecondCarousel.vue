@@ -1,5 +1,5 @@
 <template>
- <v-carousel 
+ <v-carousel class="second-carousel"
       hide-delimiters
       lazy
     >
@@ -48,4 +48,7 @@ export default {
 
     &-enter, &-leave, &-leave-to
       opacity: 0
+
+.second-carousel
+  box-shadow none
 </style>
