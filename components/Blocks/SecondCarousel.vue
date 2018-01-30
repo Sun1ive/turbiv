@@ -18,19 +18,19 @@ export default {
   data: () => ({
     items: [
       {
-        src: '/2.png',
+        src: '/2.jpg',
         id: 1,
       },
       {
-        src: '/5.png',
+        src: '/5.jpg',
         id: 2,
       },
       {
-        src: '/9.png',
+        src: '/9.jpg',
         id: 3,
       },
       {
-        src: '/20.png',
+        src: '/20.jpg',
         id: 4,
       },
     ]

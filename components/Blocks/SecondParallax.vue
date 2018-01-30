@@ -1,5 +1,5 @@
 <template>
-  <v-parallax src="9.png" class="sParallax">
+  <v-parallax src="9.jpg" class="sParallax">
     <v-container>
       <v-layout justify-center align-center>
         <v-flex xs4 class="text-xs-center">

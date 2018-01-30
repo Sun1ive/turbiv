@@ -15,15 +15,15 @@ export default {
   data: () => ({
     items: [
       {
-        src: '/slider/1.png',
+        src: '/slider/1.jpg',
         id: 1,
       },
       {
-        src: '/slider/7.png',
+        src: '/slider/7.jpg',
         id: 2,
       },
       {
-        src: '/slider/15.png',
+        src: '/slider/15.jpg',
         id: 3,
       },
     ],
