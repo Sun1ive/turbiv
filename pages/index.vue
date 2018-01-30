@@ -1,39 +1,45 @@
 <template>
-  <v-app>
+  <v-container fluid>
     <app-header />
     <v-content>
       <app-carousel />
-      <app-first />
+      <app-about />
+      <app-video />
       <app-second />
-      <app-third />
+      <app-parallax />
       <app-fourth />
-      <app-fifth />
+      <app-sParallax />
+      <app-sCarousel />
       <app-contacts />
     </v-content>
     <app-footer />
-  </v-app>
+  </v-container>
 </template>
 
 <script>
-import Header from '../components/Header';
-import HeaderCarousel from '../components/HeaderCarousel';
-import FirstBlock from '../components/FirstBlock';
-import SecondBlock from '../components/SecondBlock';
-import ThirdBlock from '../components/ThirdBlock';
-import FourthBlock from '../components/FourthBlock';
-import FifthBlock from '../components/FifthBlock';
-import Contacts from '../components/Contacts';
-import Footer from '../components/Footer';
+import Header from '../components/Blocks/Header';
+import HeaderCarousel from '../components/Blocks/HeaderCarousel';
+import AboutUs from '../components/Blocks/AboutUs';
+import SecondBlock from '../components/Blocks/SecondBlock';
+import Video from '../components/Blocks/Video';
+import FirstParallax from '../components/Blocks/FirstParallax';
+import FourthBlock from '../components/Blocks/FourthBlock';
+import SecondParallax from '../components/Blocks/SecondParallax';
+import SecondCarousel from '../components/Blocks/SecondCarousel';
+import Contacts from '../components/Blocks/Contacts';
+import Footer from '../components/Blocks/Footer';
 
 export default {
   components: {
     'app-header': Header,
     'app-carousel': HeaderCarousel,
-    'app-first': FirstBlock,
+    'app-about': AboutUs,
     'app-second': SecondBlock,
-    'app-third': ThirdBlock,
+    'app-video': Video,
+    'app-parallax': FirstParallax,
     'app-fourth': FourthBlock,
-    'app-fifth': FifthBlock,
+    'app-sParallax': SecondParallax,
+    'app-sCarousel': SecondCarousel,
     'app-contacts': Contacts,
     'app-footer': Footer,
   },
