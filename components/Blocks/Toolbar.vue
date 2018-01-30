@@ -19,7 +19,7 @@
 export default {
   data: () => ({
     menu: [
-      { title: 'Главная', el: '.header__carousel' },
+      { title: 'Главная', el: 'header' },
       { title: 'О нас', el: '.aboutUs' },
       { title: 'Контакты', el: '#contact' },
     ]

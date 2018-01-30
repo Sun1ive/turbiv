@@ -1,6 +1,5 @@
 <template>
   <v-container fluid>
-    <app-header />
     <v-content>
       <app-carousel />
       <app-about />
@@ -8,16 +7,15 @@
       <app-second />
       <app-parallax />
       <app-fourth />
-      <app-sParallax />
+      <app-second-parallax />
+      <app-products />
       <app-sCarousel />
       <app-contacts />
     </v-content>
-    <app-footer />
   </v-container>
 </template>
 
 <script>
-import Header from '../components/Blocks/Header';
 import HeaderCarousel from '../components/Blocks/HeaderCarousel';
 import AboutUs from '../components/Blocks/AboutUs';
 import SecondBlock from '../components/Blocks/SecondBlock';
@@ -25,23 +23,22 @@ import Video from '../components/Blocks/Video';
 import FirstParallax from '../components/Blocks/FirstParallax';
 import FourthBlock from '../components/Blocks/FourthBlock';
 import SecondParallax from '../components/Blocks/SecondParallax';
+import Products from '../components/Blocks/Products';
 import SecondCarousel from '../components/Blocks/SecondCarousel';
 import Contacts from '../components/Blocks/Contacts';
-import Footer from '../components/Blocks/Footer';
 
 export default {
   components: {
-    'app-header': Header,
     'app-carousel': HeaderCarousel,
     'app-about': AboutUs,
     'app-second': SecondBlock,
     'app-video': Video,
     'app-parallax': FirstParallax,
     'app-fourth': FourthBlock,
-    'app-sParallax': SecondParallax,
+    'app-second-parallax': SecondParallax,
+    'app-products': Products,
     'app-sCarousel': SecondCarousel,
     'app-contacts': Contacts,
-    'app-footer': Footer,
   },
 };
 </script>

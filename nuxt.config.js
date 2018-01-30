@@ -4,12 +4,11 @@ const pkg = require('./package');
 
 module.exports = {
   mode: 'spa',
-
   /*
   ** Headers of the page
   */
   head: {
-    title: pkg.name,
+    title: 'Turbiv',
     meta: [
       { charset: 'utf-8' },
       {

@@ -3,7 +3,7 @@
     <v-container fluid>
       <v-layout class="first" justify-center align-center>
         <v-flex xs10 sm6>
-          <div class="white--text">Цемент Турбiв, Монолiт - inDresser</div>
+          <div class="white--text">Цемент - inDresser, Монолiт - Турбiв, Парнацетепури-Бетонярьня </div>
         </v-flex>
       </v-layout>
     </v-container>

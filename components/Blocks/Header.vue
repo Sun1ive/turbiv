@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header @click="$router.push('/')">
     <v-container fluid>
       <v-layout justify-center align-center row wrap>
         <v-flex xs10 sm6 class="text-xs-center">
