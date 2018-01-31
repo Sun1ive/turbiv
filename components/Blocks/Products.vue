@@ -42,8 +42,6 @@ export default {};
 </script>
 
 <style scoped lang="stylus">
-@import url('../../node_modules/hover.css/css/hover-min.css');
-
 .layout
   min-height 600px
   .box
@@ -55,7 +53,6 @@ export default {};
     justify-content center
     align-items center
     position relative
-    pointer-events: none;
     &__overlay
       position absolute
       background-color #347
@@ -63,10 +60,9 @@ export default {};
       width 100%
       height 100%
       opacity .4
+      &:hover
+        cursor pointer
     &__item
       color #fff
       z-index 2
-    &:hover
-      cursor pointer
-
 </style>

@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <app-header />
-    <nuxt />
+      <nuxt />
     <app-footer />
     <app-scroll />
   </v-app>
@@ -18,5 +18,14 @@ export default {
     'app-header': Header,
     'app-footer': Footer,
   },
-}
+};
 </script>
+
+<style lang="stylus">
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active до версии 2.1.8 */ {
+  opacity: 0;
+}
+</style>
