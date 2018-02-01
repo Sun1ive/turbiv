@@ -20,7 +20,7 @@
 <style scoped lang="stylus">
 .myContainer
   max-width 1280px
-  z-index 5
+  z-index 100
   width 100%
   left 50%
   bottom -25%

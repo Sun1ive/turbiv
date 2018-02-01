@@ -73,6 +73,10 @@ align-text@^0.1.1, align-text@^0.1.3:
     longest "^1.0.1"
     repeat-string "^1.5.2"
 
+alloyfinger@^0.1.6:
+  version "0.1.13"
+  resolved "https://registry.yarnpkg.com/alloyfinger/-/alloyfinger-0.1.13.tgz#6c0be7d7d7d1d3ac6563aae84122af82d472a880"
+
 alphanum-sort@^1.0.1, alphanum-sort@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/alphanum-sort/-/alphanum-sort-1.0.2.tgz#97a1119649b211ad33691d9f9f486a8ec9fbe0a3"
@@ -6114,6 +6118,12 @@ vm-browserify@0.0.4:
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-0.0.4.tgz#5d7ea45bbef9e4a6ff65f95438e0a87c357d5a73"
   dependencies:
     indexof "0.0.1"
+
+vue-easy-slider@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/vue-easy-slider/-/vue-easy-slider-3.2.0.tgz#7717d9b3b0eeb35d3dd6d72b8c392d13f13b38ce"
+  dependencies:
+    alloyfinger "^0.1.6"
 
 vue-eslint-parser@^2.0.1:
   version "2.0.2"
