@@ -23,7 +23,6 @@
             class="box_wrapper"
             tag="div" 
             to="product-one"
-            exact
           >
             <div class="box one">
               <div class="box__overlay" />
@@ -44,7 +43,6 @@
             class="box_wrapper"
             tag="div" 
             to="product-two"
-            exact
           >
             <div class="box two">
               <div class="box__overlay" />

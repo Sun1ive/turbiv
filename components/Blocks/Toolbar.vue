@@ -26,19 +26,18 @@
       <v-toolbar-side-icon class="hidden-md-and-up" @click="drawer = !drawer"></v-toolbar-side-icon>
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn
+          @click="location(button)"
           class="menuButton"
           v-for="button in menu" 
           :key="button.title" 
-          v-scroll-to="button.el"
           flat
-          exact
           :to="button.path"
         >
           {{ button.title }}
         </v-btn>
       </v-toolbar-items>
       <v-spacer />
-      <v-toolbar-items>
+      <v-toolbar-items class="hidden-sm-and-down">
         <v-btn 
           flat
         >Связаться с нами</v-btn>
@@ -51,13 +50,25 @@
 export default {
   data: () => ({
     menu: [
-      { title: 'Главная', el: 'header', icon: 'home', path: '/', },
+      { title: 'Главная', el: 'header', icon: 'home' },
       { title: 'О нас', el: '.aboutUs', icon: 'star' },
       { title: 'Контакты', el: '#contact', icon: 'star' },
       { title: 'Наши товары', el: '#products', icon: 'star' },
     ],
     drawer: false,
   }),
+  methods: {
+    location(button) {
+      if (this.$route.path !== '/') {
+        this.$router.push('/');
+        setTimeout(() => {
+          this.$scrollTo(button.el, 1000);
+        }, 750);
+      } else {
+        this.$scrollTo(button.el, 1000);
+      }
+    },
+  },
 };
 </script>
 

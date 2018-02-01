@@ -3,7 +3,7 @@
     <v-container fluid>
       <v-layout justify-center align-center row wrap>
         <v-flex xs10 sm6 class="text-xs-center">
-          <img class="logo" src="https://pmonolit.com.ua/wp-content/uploads/2017/12/cropped-logo.jpg" alt="Logo">
+          <img class="logo" src="/111/logo1.jpg" alt="Logo">
         </v-flex>
         <v-spacer></v-spacer>
         <v-flex xs10 sm6 lg4>
@@ -41,14 +41,14 @@ export default {
       {
         title: 'phone',
         icon: 'phone',
-        detailsOne: '067 415 77 11',
-        detailsTwo: 'info@turbiv.com',
+        detailsOne: '‎+380969049987',
+        detailsTwo: 'turbov1986@gmail.com',
       },
       {
         title: 'adress',
         icon: 'room',
-        detailsOne: 'м. Турбiв',
-        detailsTwo: 'вул. Турбiв',
+        detailsOne: 'г. Турбов, ул. Мира, 14',
+        detailsTwo: 'Винницкая обл., Липовецкий р-н',
       },
     ],
   }),
@@ -56,9 +56,7 @@ export default {
 </script>
 
 <style scoped lang="stylus">
-.logo
-  width 88px
-  height 88px
+
 
 .contactWrapper
   display flex
