@@ -1,37 +1,45 @@
 <template>
- <v-carousel class="second-carousel carousel__wrapper"
-      hide-delimiters
-      lazy
-    >
-    <v-carousel-item
-      v-for="(item,i) in items"
-      :key="i"
-      :src="item.src"
-      transition="fade"
-      reverseTransition="fade"
-    />
-  </v-carousel>
+  <slider 
+    height="700px"
+    :speed="900"
+    animation="fade"
+  >
+    <slider-item v-for="(item, i) in items" :key="i">
+      <div class="slider-text">{{ item.text }}</div>
+      <img :src="item.src" :alt="i">
+    </slider-item>
+  </slider>
 </template>
 
 <script>
+import { Slider, SliderItem } from 'vue-easy-slider';
+
 export default {
+  components: {
+    'slider': Slider,
+    'slider-item': SliderItem,
+  },
   data: () => ({
     items: [
       {
         src: '/2.jpg',
         id: 1,
+        text: 'Cотрудничество с лидирующими фабриками-производителями ткани',
       },
       {
         src: '/5.jpg',
         id: 2,
+        text: 'Конкурентные цены',
       },
       {
         src: '/9.jpg',
         id: 3,
+        text: 'Индивидуальный подход к каждому клиенту',
       },
       {
         src: '/20.jpg',
         id: 4,
+        text: 'Вежливое обслуживание',
       },
     ]
   })
@@ -39,16 +47,5 @@ export default {
 </script>
 
 <style lang="stylus">
-  .fade
-    &-enter-active, &-leave-active, &-leave-to
-      transition: .8s ease-in-out
-      position: absolute
-      top: 0
-      left: 0
 
-    &-enter, &-leave, &-leave-to
-      opacity: 0
-
-.second-carousel
-  box-shadow none
 </style>

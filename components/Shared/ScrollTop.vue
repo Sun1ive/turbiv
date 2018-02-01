@@ -43,6 +43,7 @@ export default {
   opacity 0.3
   transition .4s linear
   animation topDown 2s linear infinite alternate
+  z-index 15
   .icon
     position absolute
     top 50%

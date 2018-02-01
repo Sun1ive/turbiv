@@ -24,7 +24,8 @@
       label="Ваш телефон"
       :error="$v.phone.$error"
     />
-    <v-btn 
+    <v-btn
+      color="primary" 
       type="submit"
       :disabled="hasErrors"
     >Отправить</v-btn>

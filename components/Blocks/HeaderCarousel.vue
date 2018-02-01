@@ -1,18 +1,5 @@
 <template>
   <v-container fluid>
-    <!-- <v-carousel 
-      hide-delimiters 
-      lazy 
-      class="header__carousel"
-    >
-      <v-carousel-item
-        v-for="(item,i) in items"
-        :key="i"
-        :src="item.src"
-        transition="fade"
-        reverseTransition="fade"
-      />
-    </v-carousel> -->
     <slider 
       height="700px"
       :speed="900"
