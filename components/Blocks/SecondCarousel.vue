@@ -1,5 +1,5 @@
 <template>
- <v-carousel class="second-carousel"
+ <v-carousel class="second-carousel carousel__wrapper"
       hide-delimiters
       lazy
     >

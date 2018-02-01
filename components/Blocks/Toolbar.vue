@@ -31,6 +31,8 @@
           :key="button.title" 
           v-scroll-to="button.el"
           flat
+          exact
+          :to="button.path"
         >
           {{ button.title }}
         </v-btn>
@@ -49,9 +51,10 @@
 export default {
   data: () => ({
     menu: [
-      { title: 'Главная', el: 'header', icon: 'home' },
+      { title: 'Главная', el: 'header', icon: 'home', path: '/', },
       { title: 'О нас', el: '.aboutUs', icon: 'star' },
       { title: 'Контакты', el: '#contact', icon: 'star' },
+      { title: 'Наши товары', el: '#products', icon: 'star' },
     ],
     drawer: false,
   }),
