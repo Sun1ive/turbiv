@@ -23,6 +23,7 @@
       </v-list>
     </v-navigation-drawer>
     <v-toolbar flat app>
+      <v-toolbar-side-icon class="hidden-md-and-up" @click="drawer = !drawer"></v-toolbar-side-icon>
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn
           class="menuButton"
@@ -34,7 +35,12 @@
           {{ button.title }}
         </v-btn>
       </v-toolbar-items>
-      <v-toolbar-side-icon class="hidden-md-and-up" @click="drawer = !drawer"></v-toolbar-side-icon>
+      <v-spacer />
+      <v-toolbar-items>
+        <v-btn 
+          flat
+        >Связаться с нами</v-btn>
+      </v-toolbar-items>
     </v-toolbar>
   </nav>
 </template>
@@ -47,7 +53,7 @@ export default {
       { title: 'О нас', el: '.aboutUs', icon: 'star' },
       { title: 'Контакты', el: '#contact', icon: 'star' },
     ],
-    drawer: true,
+    drawer: false,
   }),
 };
 </script>

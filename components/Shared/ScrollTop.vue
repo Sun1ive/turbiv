@@ -20,7 +20,7 @@ export default {
       window.scrollTo(0, 0);
     },
   },
-  created() {
+  mounted() {
     window.addEventListener('scroll', this.scrollTop);
   },
   beforeDestroy() {

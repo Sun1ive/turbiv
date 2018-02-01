@@ -36,7 +36,7 @@ module.exports = {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: ['@/plugins/vuetify', '@/plugins/vuescrollto', '@/plugins/vuelidate'],
+  plugins: ['@/plugins/vuetify', '@/plugins/vuescrollto', '@/plugins/vuelidate', '@/plugins/form'],
 
   /*
   ** Nuxt.js modules
@@ -47,6 +47,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    vendor: ['vuelidate', 'vue-scrollto'],
     /*
     ** You can extend webpack config here
     */

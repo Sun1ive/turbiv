@@ -13,6 +13,10 @@ import Header from '../components/Blocks/Header';
 import Footer from '../components/Blocks/Footer';
 
 export default {
+  transition: {
+    name: 'test',
+    mode: 'out-in'
+  },
   components: {
     'app-scroll': ScrollTopVue,
     'app-header': Header,
@@ -22,10 +26,25 @@ export default {
 </script>
 
 <style lang="stylus">
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s;
-}
-.fade-enter, .fade-leave-to /* .fade-leave-active до версии 2.1.8 */ {
+.fade-enter-active, .fade-leave-active
+  transition: opacity 1s;
+
+.fade-enter, .fade-leave-to
   opacity: 0;
-}
+
+.container
+  padding 0
+
+p
+  margin-bottom 0
+
+.carousel
+  height 600px
+
+.application--wrap > main:not(.content)
+  flex-direction: column
+
+.head-title
+  color #2EAEE4
+  font-weight normal
 </style>
