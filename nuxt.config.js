@@ -8,7 +8,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'Turbiv',
+    title: 'Nuvola',
     meta: [
       { charset: 'utf-8' },
       {
@@ -20,6 +20,7 @@ module.exports = {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans' },
     ],
   },
 
@@ -48,6 +49,20 @@ module.exports = {
   */
   build: {
     vendor: ['vuelidate', 'vue-scrollto'],
+    extractCSS: true,
+    babel: {
+      presets: ['env', 'stage-3'],
+      plugins: [
+        'syntax-dynamic-import',
+        [
+          'transform-runtime',
+          {
+            polyfill: true,
+            regenerator: true,
+          },
+        ],
+      ],
+    },
     /*
     ** You can extend webpack config here
     */

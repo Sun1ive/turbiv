@@ -56,12 +56,15 @@ export default {
 </script>
 
 <style scoped lang="stylus">
-
-
 .contactWrapper
   display flex
   .contacts
     text-align left
+
+.flex
+  min-height 100px
+  display flex
+  align-items center
 
 .icon
   font-size 3.1rem
