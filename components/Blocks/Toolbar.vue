@@ -22,27 +22,23 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar flat app>
+    <div class="toolbar elevation-0">
       <v-toolbar-side-icon class="hidden-md-and-up" @click="drawer = !drawer"></v-toolbar-side-icon>
-      <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn
-          @click="location(button)"
-          class="menuButton"
-          v-for="button in menu" 
-          :key="button.title" 
-          flat
-          :to="button.path"
-        >
-          {{ button.title }}
-        </v-btn>
-      </v-toolbar-items>
-      <v-spacer />
-      <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn 
-          flat
-        >Связаться с нами</v-btn>
-      </v-toolbar-items>
-    </v-toolbar>
+      <div class="container">
+        <div class="menuItems hidden-sm-and-down">
+          <ul class="toolbar__items">
+            <li 
+              @click="location(button)"
+              class="menuButton"
+              v-for="button in menu" 
+              :key="button.title" 
+              flat
+              :to="button.path"
+            >{{ button.title }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </nav>
 </template>
 
@@ -75,6 +71,21 @@ export default {
 <style scoped lang="stylus">
 .toolbar
   border-top 1px solid #E1E1E1
+  min-height 60px
+  display flex
+  align-items center
+  ul
+    list-style none
+  li
+    text-transform uppercase
+    transition .4s linear
+    &:hover
+      color #2EAEE4
+      cursor pointer
+    &:nth-child(2)
+      margin 0 2rem
+    &:nth-child(4)
+      margin 0 2rem
 
 .toolbar__content, .toolbar__extension
   justify-content center

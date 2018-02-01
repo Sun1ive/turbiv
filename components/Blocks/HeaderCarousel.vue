@@ -1,21 +1,29 @@
 <template>
- <v-carousel 
-    hide-delimiters 
-    lazy 
-    class="header__carousel carousel__wrapper"
-  >
-    <v-carousel-item
-      v-for="(item,i) in items"
-      :key="i"
-      :src="item.src"
-      transition="fade"
-      reverseTransition="fade"
-    />
-  </v-carousel>
+  <v-container fluid>
+    <v-carousel 
+      hide-delimiters 
+      lazy 
+      class="header__carousel carousel__wrapper"
+    >
+      <v-carousel-item
+        v-for="(item,i) in items"
+        :key="i"
+        :src="item.src"
+        transition="fade"
+        reverseTransition="fade"
+      />
+    </v-carousel>
+    <app-custom />
+  </v-container>
 </template>
 
 <script>
+import Custom from './CustomBlock';
+
 export default {
+  components: {
+    'app-custom': Custom,
+  },
   data: () => ({
     items: [
       {
@@ -36,13 +44,6 @@ export default {
 </script>
 
 <style lang="stylus">
-  .fade
-    &-enter-active, &-leave-active, &-leave-to
-      transition: .8s ease-in-out
-      position: absolute
-      top: 0
-      left: 0
-
-    &-enter, &-leave, &-leave-to
-      opacity: 0
+.container
+  position relative
 </style>

@@ -1,8 +1,8 @@
 <template>
   <header>
-    <v-container fluid>
+    <v-container>
       <v-layout justify-center align-center row wrap>
-        <v-flex xs10 sm6 class="text-xs-center">
+        <v-flex xs10 sm6>
           <img class="logo" src="/111/logo1.jpg" alt="Logo">
         </v-flex>
         <v-spacer></v-spacer>
@@ -13,7 +13,7 @@
               v-for="contact in contacts"
               :key="contact.title"
             >
-              <v-icon>{{ contact.icon }}</v-icon>
+              <v-icon color="primary">{{ contact.icon }}</v-icon>
               <div class="contacts">
                 <p>{{ contact.detailsOne }}</p>
                 <p>{{ contact.detailsTwo }}</p>
@@ -40,7 +40,7 @@ export default {
     contacts: [
       {
         title: 'phone',
-        icon: 'phone',
+        icon: 'stay_current_portrait',
         detailsOne: '‎+380969049987',
         detailsTwo: 'turbov1986@gmail.com',
       },
