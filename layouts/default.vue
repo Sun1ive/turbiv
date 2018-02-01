@@ -26,25 +26,6 @@ export default {
 </script>
 
 <style lang="stylus">
-.fade-enter-active, .fade-leave-active
-  transition: opacity 1s;
+@import '../style/main.styl'
 
-.fade-enter, .fade-leave-to
-  opacity: 0;
-
-.container
-  padding 0
-
-p
-  margin-bottom 0
-
-.carousel
-  height 600px
-
-.application--wrap > main:not(.content)
-  flex-direction: column
-
-.head-title
-  color #2EAEE4
-  font-weight normal
 </style>

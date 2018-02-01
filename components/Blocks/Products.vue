@@ -1,11 +1,11 @@
 <template>
   <v-container fluid>
     <v-layout 
-      justify-center 
       align-center
       class="my-5"
+      justify-center
     >
-      <v-flex xs10 sm6 lg4 class="text-xs-center">
+      <v-flex xs10 sm9>
         <h2 class="head-title">Наши товары</h2>
       </v-flex>
     </v-layout>
@@ -22,9 +22,31 @@
           <router-link
             class="box_wrapper"
             tag="div" 
-            to="product"
+            to="product-one"
+            exact
           >
-            <div class="box">
+            <div class="box one">
+              <div class="box__overlay" />
+              <div class="box__sticker" />
+              <div class="box__item">
+                <h1>Цемент - стоит как гранит</h1>
+              </div>
+            </div>
+          </router-link>
+        </v-layout>
+      </v-flex>
+      <v-flex xs10 md5>
+        <v-layout 
+          justify-center 
+          align-center
+        >
+          <router-link
+            class="box_wrapper"
+            tag="div" 
+            to="product-two"
+            exact
+          >
+            <div class="box two">
               <div class="box__overlay" />
               <div class="box__sticker" />
               <div class="box__item">
@@ -39,17 +61,7 @@
 </template>
 
 <script>
-export default {
-  data: () => ({
-    products: [
-      {
-        title: 'Подушка из турбова',
-        src: '/static/1.jpg',
-        textBody: `Цемент ПЦ ІІ/А-Ш-500 використовується для надміцних фундаментів, балок і плит перекриття у житловому та промисловому будівництві. Також із даного цементу виготовляють залізобетонні конструкції підвищенної міцності.Завдяки підвищенній резистентності до корозії, морозостійкості та еластичності цемент М500, може використовуватись в умовах підвищенних температур та значній вологості.`,
-      },
-    ],
-  }),
-};
+export default {};
 </script>
 
 <style scoped lang="stylus">
@@ -57,10 +69,10 @@ export default {
   min-height 600px
   margin-bottom 5rem
   .box
-    background-image url('https://pmonolit.com.ua/wp-content/uploads/2017/08/c21.jpg');
+    background-position center center
     background-size cover
     min-height 600px
-    min-width 600px
+    min-width 700px
     display flex
     justify-content center
     align-items center
@@ -77,4 +89,9 @@ export default {
     &__item
       color #fff
       z-index 2
+  .one
+    background-image url('/static/products/11.jpg');
+  .two
+    background-image url('/static/products/22.jpg');
+
 </style>
