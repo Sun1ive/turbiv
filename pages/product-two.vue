@@ -15,27 +15,44 @@
           />
         </v-carousel>
       </v-flex>
-      <v-flex xs10 sm6 lg5 class="text-xs-center">
-        <h1>hello world</h1>
-        <p class="text-xs-left">Цемент ПЦ ІІ/А-Ш-500 використовується для надміцних фундаментів, балок і плит перекриття у житловому та промисловому будівництві. Також із даного цементу виготовляють залізобетонні конструкції підвищенної міцності.Завдяки підвищенній резистентності до корозії, морозостійкості та еластичності цемент М500, може використовуватись в умовах підвищенних температур та значній вологості.</p>
-        <v-btn color="primary">
+      <app-review>
+        <template slot="head">Производство товаров для спальни</template>
+        <template slot="firstPara">На сегодня наша компания ведет активную работу по привлечению крупных заказов на производство домашнего текстиля. И за счет крупных партий заказов и персональных договоренностей с нашими партнерами-производителями ткани, мы получаем отличную цену. При необходимости, готовы рассмотреть запросы по оптовой продаже ткани в рулонах и договориться о дальнейшем сотрудничестве.</template>
+        <v-btn 
+          color="primary" 
+          @click="isActive = !isActive"
+          slot="button"
+        >
           <v-icon left>email</v-icon>
           Связаться
         </v-btn>
-      </v-flex>
+      </app-review>
     </v-layout>
+    <v-dialog 
+      v-model="isActive"
+      width="500"
+    >
+      <app-form :white="true">
+        <div 
+          class="close" 
+          slot="close"
+          @click="isActive = !isActive"
+        />
+      </app-form>
+    </v-dialog>
   </v-container>
 </template>
 
 <script>
+import ProductReview from '../components/Shared/ProductReview';
+
 export default {
+  components: {
+    'app-review': ProductReview,
+  },
   data: () => ({
-    items: [
-      '/111/5.jpg',
-      '/111/6.jpg',
-      '/111/7.jpg',
-      '/111/8.jpg',
-    ]
+    items: ['/111/5.jpg', '/111/6.jpg', '/111/7.jpg', '/111/8.jpg'],
+    isActive: false,
   }),
 };
 </script>
