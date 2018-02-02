@@ -5,20 +5,18 @@
       class="my-5"
       justify-center
     >
-      <v-flex xs10 sm9>
+      <v-flex xs10>
         <h2 class="head-title">Некоторые наши заказы</h2>
       </v-flex>
     </v-layout>
     <v-layout 
-      justify-center
+      justify-center 
       aling-center 
-      class="productsLayout"
+      class="productsLayout" 
+      wrap
     >
-      <v-flex xs10 md5>
-        <v-layout 
-          justify-center 
-          align-center
-        >
+      <v-flex xs10 sm7 md6 lg5>
+        <v-layout justify-center align-center>
           <router-link
             class="box_wrapper"
             tag="div" 
@@ -28,13 +26,13 @@
               <div class="box__overlay" />
               <div class="box__sticker" />
               <div class="box__item">
-                <h1>Цемент - стоит как гранит</h1>
+                <h1 class="text-xs-center">Производство товаров для спальни</h1>
               </div>
             </div>
           </router-link>
         </v-layout>
       </v-flex>
-      <v-flex xs10 md5>
+      <v-flex xs10 sm7 md6 lg5>
         <v-layout 
           justify-center 
           align-center
@@ -48,7 +46,7 @@
               <div class="box__overlay" />
               <div class="box__sticker" />
               <div class="box__item">
-                <h1>Цемент - стоит как гранит</h1>
+                <h1 class="text-xs-center">Оптовая продажа ткани</h1>
               </div>
             </div>
           </router-link>
@@ -58,10 +56,6 @@
   </v-container>
 </template>
 
-<script>
-export default {};
-</script>
-
 <style scoped lang="stylus">
 .productsLayout
   min-height 600px
@@ -69,8 +63,8 @@ export default {};
   .box
     background-position center center
     background-size cover
-    min-height 600px
-    min-width 700px
+    height 600px
+    width 600px
     display flex
     justify-content center
     align-items center
@@ -81,15 +75,55 @@ export default {};
       z-index 1
       width 100%
       height 100%
-      opacity .4
+      opacity .1
       &:hover
         cursor pointer
     &__item
       color #fff
       z-index 2
   .one
-    background-image url('/static/products/11.jpg');
+    background url('/static/products/11.jpg') center center no-repeat
+    background-size cover
   .two
-    background-image url('/static/products/22.jpg');
+    background url('/static/products/22.jpg') center center no-repeat
+    background-size cover
 
+
+@media (max-width 1300px)
+  .productsLayout
+    .box
+      width 500px
+      height 500px
+      h1
+        font-size 2rem
+
+@media (max-width 1100px)
+  .productsLayout
+    .box
+      width 400px
+      height 400px
+      h1
+        font-size 1.5rem
+
+@media (max-width 1000px)
+  .productsLayout
+    .box
+      width 500px
+      height 500px
+      margin 1rem 0
+
+@media (max-width 600px)
+  .productsLayout
+    .box
+      width 400px
+      height 400px
+
+@media (max-width 400px)
+  .productsLayout
+    .box
+      width 300px
+      height 300px
+      h1
+        font-size 1.2rem
+        
 </style>
