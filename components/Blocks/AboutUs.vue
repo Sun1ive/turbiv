@@ -1,6 +1,6 @@
 <template>
   <v-container fluid class="aboutUs">
-    <v-layout justify-center align-center>
+    <v-layout class="wrapper" justify-space-between align-center>
       <v-flex xs10 md5 class="text">
         <div class="head-title">О нас</div>
         <h1>NUVOLA</h1>

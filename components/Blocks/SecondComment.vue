@@ -1,6 +1,6 @@
 <template>
   <v-container fluid class="fourth">
-    <v-layout justify-center align-center>
+    <v-layout class="wrapper" justify-space-between align-center>
       <v-flex xs10 md5>
         <div class="head-title mb-3">Некоторые отзывы</div>
         <h2>Комментарий от Киевского клиента</h2>

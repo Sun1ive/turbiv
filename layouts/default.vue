@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <app-header />
-      <nuxt />
+    <nuxt />
     <app-footer />
     <app-scroll />
   </v-app>

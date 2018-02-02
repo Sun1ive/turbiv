@@ -1,7 +1,7 @@
 <template>
   <header>
-    <v-container>
-      <v-layout justify-center align-center row wrap>
+    <v-container fluid>
+      <v-layout class="wrapper" justify-center align-center row wrap>
         <v-flex class="flex__logo" xs12 sm4 md5>
           <img class="logo" src="/logo.png" alt="Logo">
         </v-flex>

@@ -23,8 +23,7 @@
       </v-list>
     </v-navigation-drawer>
     <div :class="{ fixed: fixed }" class="toolbar elevation-0">
-      <v-toolbar-side-icon class="hidden-md-and-up" @click="drawer = !drawer"></v-toolbar-side-icon>
-      <div class="container">
+      <div class="wrapper">
         <div class="menuItems hidden-sm-and-down">
           <ul class="toolbar__items">
             <li 
@@ -38,6 +37,7 @@
           </ul>
         </div>
       </div>
+      <v-toolbar-side-icon class="hidden-md-and-up" @click="drawer = !drawer"></v-toolbar-side-icon>
     </div>
   </nav>
 </template>
@@ -80,7 +80,7 @@ export default {
     window.addEventListener('scroll', this.checkPos);
   },
   beforeDestroy() {
-    window.removeEventListener('scrol', this.checkPos);
+    window.removeEventListener('scroll', this.checkPos);
   },
 };
 </script>

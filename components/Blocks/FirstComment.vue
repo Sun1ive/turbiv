@@ -1,6 +1,6 @@
 <template>
   <v-container fluid class="reverse">
-    <v-layout justify-space-around align-center>
+    <v-layout class="wrapper" justify-space-between align-center>
       <v-flex xs10 md5 class="text-xs-center">
         <img src="https://pmonolit.com.ua/wp-content/uploads/2016/09/team.jpg" alt="team">
       </v-flex>

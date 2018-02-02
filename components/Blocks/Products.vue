@@ -2,8 +2,7 @@
   <v-container fluid id="products">
     <v-layout 
       align-center
-      class="my-5"
-      justify-center
+      class="wrapper my-5" justify-space-between
     >
       <v-flex xs10>
         <h2 class="head-title">Некоторые наши заказы</h2>
@@ -16,7 +15,7 @@
       wrap
     >
       <v-flex xs10 sm7 md6 lg5>
-        <v-layout justify-center align-center>
+        <v-layout align-center>
           <router-link
             class="box_wrapper"
             tag="div" 
@@ -33,10 +32,7 @@
         </v-layout>
       </v-flex>
       <v-flex xs10 sm7 md6 lg5>
-        <v-layout 
-          justify-center 
-          align-center
-        >
+        <v-layout align-center>
           <router-link
             class="box_wrapper"
             tag="div" 
