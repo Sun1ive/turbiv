@@ -4,7 +4,7 @@
       <v-flex xs4 class="box">
         <div class="mr-5">
           <div class="head-title mb-3">Про нас</div>     
-          <img src="/111/logo1.jpg" alt="logo">
+          <img class="logo" src="logo.png" alt="logo">
         </div>
         <div class="text">NUVOLA – Ваш надежный партнер, который может взять на себя реализацию Ваших задач. Работаем с заказами по Украине и странам Европы</div>
       </v-flex>

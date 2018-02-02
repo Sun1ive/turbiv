@@ -3,15 +3,15 @@
     <v-layout justify-space-between align-center>
       <v-flex class="text-xs-center" xs10 sm6 lg4>
         <div class="img first" />
-        <h1>Завжди у наявності</h1>
+        <div class="text">Быстрое <br/> исполнение заказа</div>
       </v-flex>
       <v-flex class="text-xs-center" xs10 sm6 lg4>
         <div class="img second" />
-        <h1>Завжди у наявності</h1>
+        <div class="text">Конкурентные <br/> цены</div>
       </v-flex>
       <v-flex class="text-xs-center my-5" xs10 sm6 lg4>
         <div class="img third" />
-        <h1>Завжди у наявності</h1>
+        <div class="text">Заказы из <br> 4 стран ЕВРОПЫ</div>
       </v-flex>
     </v-layout>
   </div>
@@ -32,22 +32,23 @@
       &:nth-child(2)
       &:nth-child(3)
         border-left 1px solid #c0c0c0
+  .img
+    min-height 180px
+    max-width 350px
+    margin 0 auto
 
 .first
-  background url('https://pmonolit.com.ua/wp-content/uploads/2016/09/1.jpg') center center no-repeat
-  min-height 180px
-  max-width 350px
-  margin 0 auto
+  background url('/advantages/1.jpg') center center no-repeat
 .second
-  background url('https://pmonolit.com.ua/wp-content/uploads/2016/09/1.jpg') center center no-repeat
-  min-height 180px
-  max-width 350px
-  margin 0 auto
+  background url('/advantages/2.jpg') center center no-repeat
 .third
-  background url('https://pmonolit.com.ua/wp-content/uploads/2016/09/1.jpg') center center no-repeat
-  min-height 180px
-  max-width 350px
-  margin 0 auto
+  background url('/advantages/3.jpg') center center no-repeat
 
+.text
+  font-family Arial, Helvetica, sans-serif
+  font-size 2rem
+  font-weight bold
+  line-height 2.5rem
+  margin-top 1rem
 
 </style>

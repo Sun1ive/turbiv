@@ -63,7 +63,7 @@
   .box
     background-position center center
     background-size cover
-    height 600px
+    height 500px
     width 600px
     display flex
     justify-content center
@@ -75,17 +75,17 @@
       z-index 1
       width 100%
       height 100%
-      opacity .1
+      opacity .05
       &:hover
         cursor pointer
     &__item
       color #fff
       z-index 2
   .one
-    background url('/static/products/11.jpg') center center no-repeat
+    background url('/static/products/1.jpg') center center no-repeat
     background-size cover
   .two
-    background url('/static/products/22.jpg') center center no-repeat
+    background url('/static/products/2.jpg') center center no-repeat
     background-size cover
 
 

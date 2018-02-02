@@ -3,7 +3,7 @@
     <v-container>
       <v-layout justify-center align-center row wrap>
         <v-flex class="flex__logo" xs12 sm4 md5>
-          <img class="logo" src="/111/logo1.jpg" alt="Logo">
+          <img class="logo" src="/logo.png" alt="Logo">
         </v-flex>
         <v-spacer></v-spacer>
         <v-flex xs12 sm8 md5 class="text-xs-center">
