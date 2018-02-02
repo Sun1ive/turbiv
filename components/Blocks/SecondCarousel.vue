@@ -1,12 +1,12 @@
 <template>
   <slider 
-    height="700px"
     :speed="900"
     animation="fade"
+    height="600px"
   >
     <slider-item v-for="(item, i) in items" :key="i">
       <div class="slider-text">{{ item.text }}</div>
-      <img :src="item.src" :alt="i">
+      <img class="slider__img" :src="item.src" :alt="i">
     </slider-item>
   </slider>
 </template>
@@ -22,23 +22,19 @@ export default {
   data: () => ({
     items: [
       {
-        src: '/2.jpg',
-        id: 1,
+        src: '/slider2/1.jpg',
         text: 'Cотрудничество с лидирующими фабриками-производителями ткани',
       },
       {
-        src: '/5.jpg',
-        id: 2,
+        src: '/slider2/2.jpg',
         text: 'Конкурентные цены',
       },
       {
-        src: '/9.jpg',
-        id: 3,
+        src: '/slider2/3.jpg',
         text: 'Индивидуальный подход к каждому клиенту',
       },
       {
         src: '/20.jpg',
-        id: 4,
         text: 'Вежливое обслуживание',
       },
     ]
@@ -47,5 +43,6 @@ export default {
 </script>
 
 <style lang="stylus">
-
+.slider__img
+  width 100%
 </style>

@@ -3,12 +3,10 @@
     <v-layout justify-space-around align-center>
       <v-flex xs4 class="box">
         <div class="mr-5">
-          <h1>TURB0V</h1>        
-          <img src="https://pmonolit.com.ua/wp-content/uploads/2017/12/cropped-logo-150x150.jpg" alt="logo">
+          <div class="head-title mb-3">Про нас</div>     
+          <img src="/111/logo1.jpg" alt="logo">
         </div>
-        <div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nisi sequi accusamus culpa dolores, facilis deleniti doloribus vero laudantium repudiandae nostrum adipisci quam aliquam perspiciatis neque nobis autem possimus voluptas.</p>
-        </div>
+        <div class="text">NUVOLA – Ваш надежный партнер, который может взять на себя реализацию Ваших задач. Работаем с заказами по Украине и странам Европы</div>
       </v-flex>
       <v-flex xs3 class="text-xs-center">
         <app-form />
@@ -18,8 +16,7 @@
 </template>
 
 <script>
-export default {
-};
+export default {};
 </script>
 
 <style lang="stylus" scoped>
@@ -31,5 +28,8 @@ export default {
   display flex
   align-items center
   justify-content space-around
+
+.text
+  font-size 1.1rem
 
 </style>

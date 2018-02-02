@@ -22,7 +22,7 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <div class="toolbar elevation-0">
+    <div :class="{ fixed: fixed }" class="toolbar elevation-0">
       <v-toolbar-side-icon class="hidden-md-and-up" @click="drawer = !drawer"></v-toolbar-side-icon>
       <div class="container">
         <div class="menuItems hidden-sm-and-down">
@@ -43,6 +43,8 @@
 </template>
 
 <script>
+import debounce from 'lodash/debounce';
+
 export default {
   data: () => ({
     menu: [
@@ -52,6 +54,7 @@ export default {
       { title: 'Наши товары', el: '#products', icon: 'star' },
     ],
     drawer: false,
+    fixed: false,
   }),
   methods: {
     location(button) {
@@ -64,6 +67,20 @@ export default {
         this.$scrollTo(button.el, 1000);
       }
     },
+    checkPos() {
+      const pos = window.pageYOffset;
+      if (pos >= 1500) {
+        this.fixed = true;
+      } else {
+        this.fixed = false;
+      }
+    },
+  },
+  created() {
+    window.addEventListener('scroll', this.checkPos);
+  },
+  beforeDestroy() {
+    window.removeEventListener('scrol', this.checkPos);
   },
 };
 </script>
@@ -74,6 +91,7 @@ export default {
   min-height 60px
   display flex
   align-items center
+  transition .4s ease
   ul
     list-style none
   li
@@ -89,4 +107,14 @@ export default {
 
 .toolbar__content, .toolbar__extension
   justify-content center
+
+.fixed
+  position fixed
+  top 0
+  left 0
+  z-index 5
+  opacity 0.3
+  &:hover
+    opacity 1
+
 </style>

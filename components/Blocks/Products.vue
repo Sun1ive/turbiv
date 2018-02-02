@@ -6,7 +6,7 @@
       justify-center
     >
       <v-flex xs10 sm9>
-        <h2 class="head-title">Наши товары</h2>
+        <h2 class="head-title">Некоторые наши заказы</h2>
       </v-flex>
     </v-layout>
     <v-layout 
