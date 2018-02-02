@@ -23,7 +23,7 @@
   z-index 100
   width 100%
   left 50%
-  bottom -25%
+  bottom -45%
   transform translateX(-50%)
   background-color #fff
   position absolute

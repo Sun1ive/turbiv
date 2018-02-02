@@ -21,26 +21,26 @@ import Custom from './CustomBlock';
 export default {
   components: {
     'app-custom': Custom,
-    'slider': Slider,
+    slider: Slider,
     'slider-item': SliderItem,
   },
   data: () => ({
     items: [
       {
-        src: '/slider/1.jpg',
-        text: 'Оперативный пошив крупных оптовых партий изделий «под ключ»'
-      },
-      {
-        src: '/slider/2.jpg',
-        text: 'Исполнение заказа из материала заказчика'
+        src: '/slider/4.jpg',
+        text: 'Оперативный пошив крупных оптовых партий изделий «под ключ»',
       },
       {
         src: '/slider/3.jpg',
-        text: 'Производство небольших партий товаров (мелкий ОПТ)'
+        text: 'Исполнение заказа из материала заказчика',
       },
       {
-        src: '/slider/4.jpg',
-        text: 'Продажа ткани в рулонах'
+        src: '/slider/1.jpg',
+        text: 'Производство небольших партий товаров (мелкий ОПТ)',
+      },
+      {
+        src: '/slider/2.jpg',
+        text: 'Продажа ткани в рулонах',
       },
     ],
   }),

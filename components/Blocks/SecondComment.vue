@@ -18,7 +18,7 @@
 <style lang="stylus" scoped>
 .layout
   background-color #f4f4f4
-  min-height 400px
+  min-height 475px
 
 </style>
 

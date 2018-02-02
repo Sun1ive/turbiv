@@ -17,7 +17,7 @@
 .layout
   background-color #f4f4f4
   min-height 500px
-  padding-top 250px
+  padding-top 375px
   padding-bottom 50px
   .text
     margin-right 3rem

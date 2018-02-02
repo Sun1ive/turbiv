@@ -57,7 +57,7 @@
     background-position center center
     background-size cover
     height 500px
-    width 700px
+    width 600px
     display flex
     justify-content center
     align-items center
@@ -82,6 +82,12 @@
     background-size cover
 
 
+@media (max-width 1500px)
+  .productsLayout
+    .box
+      width 500px
+      height 500px
+
 @media (max-width 1300px)
   .productsLayout
     .box
@@ -98,7 +104,7 @@
       h1
         font-size 1.5rem
 
-@media (max-width 1000px)
+@media (max-width 960px)
   .productsLayout
     .box
       width 500px
