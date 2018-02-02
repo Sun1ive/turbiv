@@ -13,7 +13,7 @@
 
 <style lang="stylus" scoped>
 .layout
-  min-height 500px
+  min-height 450px
 
 </style>
 

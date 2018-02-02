@@ -28,23 +28,19 @@ export default {
     items: [
       {
         src: '/slider/1.jpg',
-        id: 1,
         text: 'Оперативный пошив крупных оптовых партий изделий «под ключ»'
       },
       {
         src: '/slider/2.jpg',
-        id: 2,
-        text: 'Исполнение заказа из материала заказчика.'
+        text: 'Исполнение заказа из материала заказчика'
       },
       {
         src: '/slider/3.jpg',
-        id: 3,
         text: 'Производство небольших партий товаров (мелкий ОПТ)'
       },
       {
         src: '/slider/4.jpg',
-        id: 4,
-        text: 'Продажа ткани в рулонах.'
+        text: 'Продажа ткани в рулонах'
       },
     ],
   }),
@@ -56,7 +52,6 @@ export default {
   position relative
   .header__carousel
     height 600px
-
 
 
 </style>

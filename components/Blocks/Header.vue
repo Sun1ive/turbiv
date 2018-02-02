@@ -2,11 +2,11 @@
   <header>
     <v-container>
       <v-layout justify-center align-center row wrap>
-        <v-flex xs10 sm6>
+        <v-flex class="flex__logo" xs12 sm4 md5>
           <img class="logo" src="/111/logo1.jpg" alt="Logo">
         </v-flex>
         <v-spacer></v-spacer>
-        <v-flex xs10 sm6 lg4>
+        <v-flex xs12 sm8 md5 class="text-xs-center">
           <v-layout justify-center align-center>
             <v-flex
               class="contactWrapper"
@@ -69,4 +69,9 @@ export default {
 .icon
   font-size 3.1rem
   padding-right 1rem
+
+
+@media (max-width 600px)
+  .flex__logo
+    justify-content center
 </style>

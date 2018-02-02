@@ -13,13 +13,9 @@
   </v-container>
 </template>
 
-<script>
-export default {};
-</script>
-
 <style lang="stylus" scoped>
 .layout
   background-color #f4f4f4
-  min-height 500px
+  min-height 400px
 
 </style>
