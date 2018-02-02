@@ -25,11 +25,16 @@
       label="Ваш телефон (Обязательно)"
       :error="$v.phone.$error"
     />
-    <v-btn
+    <button
+      type="submit"
+      class="my-btn hvr-sweep-to-left"
+      :disabled="hasErrors"
+    >Отправить</button>
+    <!-- <v-btn
       color="primary" 
       type="submit"
       :disabled="hasErrors"
-    >Отправить</v-btn>
+    >Отправить</v-btn> -->
   </v-form>
 </template>
 

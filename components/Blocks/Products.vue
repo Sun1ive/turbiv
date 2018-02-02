@@ -1,10 +1,7 @@
 <template>
   <v-container fluid id="products">
-    <v-layout 
-      align-center
-      class="wrapper my-5" justify-space-between
-    >
-      <v-flex xs10>
+    <v-layout align-center class="wrapper my-5">
+      <v-flex xs12>
         <h2 class="head-title">Некоторые наши заказы</h2>
       </v-flex>
     </v-layout>
@@ -32,7 +29,7 @@
         </v-layout>
       </v-flex>
       <v-flex xs10 sm7 md6 lg5>
-        <v-layout align-center>
+        <v-layout justify-end align-center>
           <router-link
             class="box_wrapper"
             tag="div" 
@@ -60,7 +57,7 @@
     background-position center center
     background-size cover
     height 500px
-    width 600px
+    width 700px
     display flex
     justify-content center
     align-items center
