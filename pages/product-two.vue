@@ -35,7 +35,7 @@ export default {
     'app-review': ProductReview,
   },
   data: () => ({
-    items: ['/111/5.jpg', '/111/6.jpg', '/111/7.jpg', '/111/8.jpg'],
+    items: ['/pages/5.jpg', '/pages/6.jpg', '/pages/7.jpg'],
     isActive: false,
   }),
 };
