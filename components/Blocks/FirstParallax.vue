@@ -1,9 +1,9 @@
 <template>
-  <v-parallax height="400" src="parallax/1.jpg" class="third">
+  <v-parallax height="350" src="parallax/1.jpg" class="third">
     <v-container>
       <v-layout justify-center align-center>
         <v-flex xs4 class="text-xs-center">
-          <h1>hello world</h1>
+          <img src="logo.png" alt="logo">
         </v-flex>
       </v-layout>
     </v-container>
@@ -16,4 +16,3 @@
   min-height 450px
 
 </style>
-

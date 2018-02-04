@@ -1,13 +1,17 @@
 <template>
   <v-container fluid class="aboutUs">
-    <v-layout class="wrapper" justify-space-between align-center>
-      <v-flex xs10 md5 class="text">
+    <v-layout 
+      class="wrapper"
+      justify-center
+      align-center
+    >
+      <v-flex xs10 md5>
         <div class="head-title">О нас</div>
         <h1>NUVOLA</h1>
         <p>Наша компания создана в 2016 году. Основными задачами производства, на первом этапе, стало обслуживание всего одного, но крупного заказчика, который и по сегодня является постоянным партнером. Мы каждый день работаем над усовершенствованием нашей технологической линии и повышаем профессиональную подготовку кадров. Такой подход позволяет нам получать большое количество новых заказов, в подтверждении чего, мы уже имеем положительный опыт обслуживания оптовых заказов не только из Украины, но и нескольких стран Европы. Своей сильной стороной считаем не только качество и скорость, но и наше сотрудничество и договоренности с крупными заводами стран Азии по производству текстиля. Это позволяет получить наилучшие цены, что в свою очередь влияет на снижение конечной себестоимости изделий для заказчика.</p>
       </v-flex>
-      <v-flex xs10 md5 class="text-xs-center">
-        <img src="https://pmonolit.com.ua/wp-content/uploads/2016/09/team.jpg" alt="team">
+      <v-flex xs10 md5 offset-md1 class="text-xs-center">
+        <img src="/pages/team.jpg" alt="team">
       </v-flex>
     </v-layout>
   </v-container>
@@ -19,7 +23,5 @@
   min-height 500px
   padding-top 375px
   padding-bottom 50px
-  .text
-    margin-right 3rem
 </style>
 

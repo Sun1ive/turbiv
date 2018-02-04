@@ -42,7 +42,7 @@ export default {
         title: 'phone',
         icon: 'stay_current_portrait',
         detailsOne: '‎+380969049987',
-        detailsTwo: 'turbov1986@gmail.com',
+        detailsTwo: 'info@nuvola.com.ua',
       },
       {
         title: 'adress',

@@ -2,9 +2,8 @@
   <slider 
     :speed="900"
     animation="fade"
-    height="600px"
   >
-    <slider-item v-for="(item, i) in items" :key="i">
+    <slider-item class="slider__item" v-for="(item, i) in items" :key="i">
       <img class="slider__img" :src="item.src" :alt="i">
     </slider-item>
   </slider>
@@ -29,8 +28,17 @@ export default {
 };
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
+.slider,
+.items,
+.slider-item
+  height 600px !important
+
 .slider__img
   width 100%
+
+@media (max-width 1300px)
+  .slider, .items, .slider-item
+    height 400px !important
 
 </style>

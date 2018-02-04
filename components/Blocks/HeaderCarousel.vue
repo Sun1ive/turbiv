@@ -1,7 +1,7 @@
 <template>
   <v-container fluid>
     <slider 
-      height="700px"
+      height="800px"
       :speed="900"
       animation="fade"
     >
