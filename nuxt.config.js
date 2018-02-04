@@ -13,13 +13,17 @@ module.exports = {
       { charset: 'utf-8' },
       {
         name: 'viewport',
-        content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui',
+        content:
+          'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui',
       },
       { hid: 'description', name: 'description', content: pkg.description },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons',
+      },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans' },
     ],
   },
@@ -37,7 +41,13 @@ module.exports = {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: ['@/plugins/vuetify', '@/plugins/vuescrollto', '@/plugins/vuelidate', '@/plugins/form', '@/plugins/hover'],
+  plugins: [
+    '@/plugins/vuetify',
+    '@/plugins/vuescrollto',
+    '@/plugins/vuelidate',
+    '@/plugins/form',
+    '@/plugins/hover',
+  ],
 
   /*
   ** Nuxt.js modules

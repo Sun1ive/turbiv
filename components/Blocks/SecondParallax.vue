@@ -3,7 +3,7 @@
     <v-container>
       <v-layout justify-center align-center>
         <v-flex xs4 class="text-xs-center">
-          <img src="logo.png" alt="logo">
+          <img class="logo-parallax" src="logo.png" alt="logo">
         </v-flex>
       </v-layout>
     </v-container>

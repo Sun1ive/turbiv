@@ -30,11 +30,6 @@
       class="my-btn hvr-sweep-to-left"
       :disabled="hasErrors"
     >Отправить</button>
-    <!-- <v-btn
-      color="primary" 
-      type="submit"
-      :disabled="hasErrors"
-    >Отправить</v-btn> -->
   </v-form>
 </template>
 
