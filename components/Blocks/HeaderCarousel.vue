@@ -1,8 +1,8 @@
 <template>
   <v-container fluid>
     <slider 
-      height="800px"
-      :speed="900"
+      :speed="1200"
+      :interval="5000"
       animation="fade"
     >
       <slider-item v-for="(item, i) in items" :key="i">
@@ -47,11 +47,17 @@ export default {
 };
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
 .container
   position relative
-  .header__carousel
-    height 600px
 
+.slider,
+.items,
+.slider-item
+  height 700px !important
+
+.slider__img
+  width 100%
+  height 100%
 
 </style>
