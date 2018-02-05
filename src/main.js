@@ -10,6 +10,7 @@ import 'vuetify/dist/vuetify.min.css';
 import App from './App';
 import router from './router';
 import Information from './components/Templates/Infomation';
+import Form from './components/Shared/Form';
 import '../src/style/main.styl';
 
 Vue.use(VueSwiper);
@@ -19,6 +20,7 @@ Vue.use(Vuetify, {
   },
 });
 Vue.component('Information', Information);
+Vue.component('Form', Form);
 
 Vue.config.productionTip = false;
 

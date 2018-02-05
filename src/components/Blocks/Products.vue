@@ -10,6 +10,7 @@
         <div class="row">
           <div class="col" v-for="item in products" :key="item.title">
             <div class="product" :style="{ background: 'url(' + item.src + ')', }">
+              <div class="overlay" />
               <h2>{{ item.title }}</h2>
             </div>
           </div>
@@ -42,8 +43,18 @@ export default {
   display flex
   justify-content center
   align-items center
-  color #fff
   cursor pointer
-  font-size 2rem
   text-align center
+  position relative
+  .overlay
+    position absolute
+    top 0
+    left 0
+    opacity .05
+    background-color #334477
+    z-index 1
+  h2
+    color #fff
+    font-size 2rem
+    z-index 2 
 </style>
