@@ -13,7 +13,7 @@
       type="number" 
       class="input"
       placeholder="Ваш телефон(обязательно)">
-    <button class="my-btn" type="submit">Отправить</button>
+    <button class="my-btn hvr hvr-sweep-to-left" type="submit">Отправить</button>
   </form>
 </template>
 

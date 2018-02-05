@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <Header />
-    <router-view/>
+    <transition name="fade" mode="out-in">
+      <router-view/>
+    </transition>
     <Footer />
     <ScrollTop />
   </div>
@@ -28,5 +30,11 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   background-color #F4F4F4
   scroll-behavior smooth
+
+.fade-enter-active, .fade-leave-active
+  transition: opacity .5s;
+
+.fade-enter, .fade-leave-to /* .fade-leave-active до версии 2.1.8 */
+  opacity: 0;
 
 </style>

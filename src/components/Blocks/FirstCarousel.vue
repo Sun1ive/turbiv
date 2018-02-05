@@ -52,4 +52,6 @@ export default {
   color #fff
   text-align center
   font-weight bold
+  font-family 'Open Sans', Arial, Helvetica, sans-serif
+  width 100%
 </style>

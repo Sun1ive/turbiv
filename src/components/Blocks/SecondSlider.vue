@@ -31,7 +31,6 @@ export default {
 
 <style scoped lang="stylus">
 .slider-img
-  height 550px
   display flex
   align-items center
   justify-content center
@@ -41,4 +40,6 @@ export default {
   font-weight bold
   background-size cover !important
   background-repeat no-repeat !important
+  width 100%
+
 </style>
