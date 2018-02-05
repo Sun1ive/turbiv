@@ -8,7 +8,7 @@ export default new Router({
   mode: 'history',
   routes: [
     { path: '/', component: Home },
-    { path: '/Bedroom', component: () => import('../components/pages/Bedroom') },
-    { path: '/Wholesale', component: () => import('../components/pages/Wholesale') },
+    { path: '/Bedroom', component: () => import('../components/Pages/Bedroom') },
+    { path: '/Wholesale', component: () => import('../components/Pages/Wholesale') },
   ],
 });
