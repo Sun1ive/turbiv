@@ -19,13 +19,12 @@
 
 
 <style scoped lang="stylus">
-.col
-  margin 3rem 0
   h1
     font-weight bold
   .img
     width 100%
 
-.col-5
-  margin-right 3rem
+.col-6
+  margin 5rem 3rem 5rem 0
+
 </style>
