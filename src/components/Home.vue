@@ -7,6 +7,7 @@
     <FirstParallax />
     <SecondComment />
     <SecondParallax />
+    <Products />
   </main>
 </template>
 
@@ -18,6 +19,7 @@ import FirstParallax from './Blocks/FirstParallax';
 import FirstComment from './Blocks/FirstComment';
 import SecondComment from './Blocks/SecondComment';
 import SecondParallax from './Blocks/SecondParallax';
+import Products from './Blocks/Products';
 
 export default {
   components: {
@@ -28,6 +30,7 @@ export default {
     FirstComment,
     SecondComment,
     SecondParallax,
+    Products,
   },
 };
 </script>
