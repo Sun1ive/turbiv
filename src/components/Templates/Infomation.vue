@@ -36,6 +36,7 @@ export default {
 <style scoped lang="stylus">
   h1
     font-weight bold
+    margin-bottom 1rem
   .img
     width 100%
 
@@ -46,5 +47,8 @@ export default {
   flex-direction row-reverse
   .col-6
     margin 5rem 0 5rem 3rem
+
+.head-title
+  margin-bottom 1rem
 
 </style>

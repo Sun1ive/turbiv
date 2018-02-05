@@ -8,6 +8,7 @@
     <SecondComment />
     <SecondParallax />
     <Products />
+    <SecondSlider />
     <Contacts />
   </main>
 </template>
@@ -21,6 +22,7 @@ import FirstComment from './Blocks/FirstComment';
 import SecondComment from './Blocks/SecondComment';
 import SecondParallax from './Blocks/SecondParallax';
 import Products from './Blocks/Products';
+import SecondSlider from './Blocks/SecondSlider';
 import Contacts from './Blocks/Contacts';
 
 export default {
@@ -33,6 +35,7 @@ export default {
     SecondComment,
     SecondParallax,
     Products,
+    SecondSlider,
     Contacts,
   },
 };

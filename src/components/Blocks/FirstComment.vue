@@ -10,6 +10,7 @@
 </template>
 
 
-<style scoped>
-
+<style scoped lang="stylus">
+.htt-first
+  padding 3rem 0
 </style>

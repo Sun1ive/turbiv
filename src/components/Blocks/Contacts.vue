@@ -19,13 +19,9 @@
   </div>
 </template>
 
-<script>
-export default {};
-</script>
-
 <style scoped lang="stylus">
 .contacts
-  padding 3rem 0
+  padding 5rem 0
 .flex
   display flex
   align-items center
@@ -33,4 +29,5 @@ export default {};
     margin-bottom 1rem
   .text
     margin-left 3rem
+    font-size 1.1rem
 </style>

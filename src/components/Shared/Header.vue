@@ -62,7 +62,7 @@ export default {
     display flex
     align-items center
     p
-      font-size .8rem
       margin-left 1rem
+      color #333
 
 </style>

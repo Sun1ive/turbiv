@@ -1,5 +1,5 @@
 <template>
-  <div class="htt-first">
+  <div class="htt-second">
     <information>
       <template slot="head-title">Некоторые отзывы</template>
       <template slot="head">Александр - одна из крупнейших фирм по продаже текстиля (Украина)</template>
@@ -10,6 +10,7 @@
 </template>
 
 
-<style scoped>
-
+<style scoped lang="stylus">
+.htt-second
+  padding 3rem 0
 </style>
