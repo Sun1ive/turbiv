@@ -1,23 +1,36 @@
 <template>
-  <div class="aboutUs">
-    <div class="wrapper">
-      <div class="container-fluid">
-        <div class="row align-items-center">
-          <div class="col col-6">
-            <div class="head-title">
-              <slot name="head" />
-            </div>
-            <h1>Nuvola</h1>
-            <p>Наша компания создана в 2016 году. Основными задачами производства, на первом этапе, стало обслуживание всего одного, но крупного заказчика, который и по сегодня является постоянным партнером. Мы каждый день работаем над усовершенствованием нашей технологической линии и повышаем профессиональную подготовку кадров. Такой подход позволяет нам получать большое количество новых заказов, в подтверждении чего, мы уже имеем положительный опыт обслуживания оптовых заказов не только из Украины, но и нескольких стран Европы. Своей сильной стороной считаем не только качество и скорость, но и наше сотрудничество и договоренности с крупными заводами стран Азии по производству текстиля. Это позволяет получить наилучшие цены, что в свою очередь влияет на снижение конечной себестоимости изделий для заказчика.</p>
+  <div class="wrapper">
+    <div class="container-fluid">
+      <div :class="{ reverse: reverse }" class="row align-items-center">
+        <div class="col col-6">
+          <div class="head-title">
+            <slot name="head-title" />
           </div>
-          <div class="col">
-            <img class="img" src="/static/blocks/team.jpg" alt="team">
-          </div>
+          <h1>
+            <slot name="head" />
+          </h1>
+          <p>
+            <slot name="text" />
+          </p>
+        </div>
+        <div class="col">
+          <slot name="img" />
         </div>
       </div>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  props: {
+    reverse: {
+      type: Boolean,
+      default: false
+    }
+  },
+};
+</script>
 
 
 <style scoped lang="stylus">
@@ -28,5 +41,10 @@
 
 .col-6
   margin 5rem 3rem 5rem 0
+
+.reverse
+  flex-direction row-reverse
+  .col-6
+    margin 5rem 0 5rem 3rem
 
 </style>

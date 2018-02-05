@@ -27,5 +27,6 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color #F4F4F4
+  scroll-behavior smooth
 
 </style>
