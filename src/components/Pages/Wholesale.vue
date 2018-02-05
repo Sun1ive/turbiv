@@ -41,13 +41,8 @@ export default {
   data: () => ({
     swiperOptions,
     items: [
-      { src: '/static/product/1.jpg' },
-      { src: '/static/product/2.jpg' },
-      { src: '/static/product/3.jpg' },
-      { src: '/static/product/4.jpg' },
-      { src: '/static/product/5.jpg' },
-      { src: '/static/product/6.jpg' },
-      { src: '/static/product/7.jpg' },
+      { src: '/static/slider/2.jpg' },
+      { src: '/static/parallax/1.jpg' },
     ],
   }),
 };
