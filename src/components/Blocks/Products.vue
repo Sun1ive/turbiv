@@ -9,7 +9,11 @@
         </div>
         <div class="row">
           <div class="col" v-for="item in products" :key="item.title">
-            <div class="product" :style="{ background: 'url(' + item.src + ')', }">
+            <div 
+              class="product" 
+              :style="{ background: 'url(' + item.src + ')', }"
+              @click="$router.push(item.path)"
+            >
               <div class="overlay" />
               <h2>{{ item.title }}</h2>
             </div>
