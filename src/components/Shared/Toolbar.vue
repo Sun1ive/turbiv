@@ -38,6 +38,7 @@ export default {
   border-top 1px solid #E1E1E1
   border-bottom 1px solid #E1E1E1
   text-transform uppercase
+  background-color #fff
   ul
     padding 0
     margin 0
