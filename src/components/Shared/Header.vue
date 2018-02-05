@@ -8,23 +8,29 @@
           </div>
           <div class="col-6">
             <div class="row">
-            <div class="col details" v-for="item in contacts" :key="item.title">
-              <i class="icon material-icons" v-text="item.icon" />
-              <div class="contacts">
-                <p>{{ item.detailsOne }}</p>
-                <p>{{ item.detailsTwo }}</p>
+              <div class="col details" v-for="item in contacts" :key="item.title">
+                <i class="icon material-icons" v-text="item.icon" />
+                <div class="contacts">
+                  <p>{{ item.detailsOne }}</p>
+                  <p>{{ item.detailsTwo }}</p>
+                </div>
               </div>
-            </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <Toolbar />
   </header> 
 </template>
 
 <script>
+import Toolbar from './Toolbar';
+
 export default {
+  components: {
+    Toolbar,
+  },
   data: () => ({
     contacts: [
       {
@@ -50,7 +56,7 @@ export default {
   min-height 100px
   align-items center
   .icon
-    font-size 3rem
+    font-size 2.5rem
     color #006FB2
   .details
     display flex
