@@ -3,17 +3,20 @@
     <Header />
     <router-view/>
     <Footer />
+    <ScrollTop />
   </div>
 </template>
 
 <script>
 import Header from './components/Shared/Header';
 import Footer from './components/Shared/Footer';
+import ScrollTop from './components/Shared/ScrollTop';
 
 export default {
   components: {
     Header,
     Footer,
+    ScrollTop,
   },
 };
 </script>

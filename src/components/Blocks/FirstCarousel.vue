@@ -53,6 +53,7 @@ export default {
 
 <style scoped lang="stylus">
 .slider-img
+  background-position 0 -80px !important
   min-height 700px
   display flex
   align-items center
