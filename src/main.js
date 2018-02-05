@@ -1,7 +1,9 @@
 import Vue from 'vue';
 import VueSwiper from 'vue-awesome-swiper';
 import 'swiper/dist/css/swiper.min.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap-grid.min.css';
+
 import { Vuetify, VParallax } from 'vuetify';
 import 'vuetify/dist/vuetify.min.css';
 

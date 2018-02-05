@@ -3,7 +3,10 @@
     <FirstCarousel />
     <AboutUs />
     <Video />
+    <FirstComment />
     <FirstParallax />
+    <SecondComment />
+    <SecondParallax />
   </main>
 </template>
 
@@ -12,6 +15,9 @@ import FirstCarousel from './Blocks/FirstCarousel';
 import AboutUs from './Blocks/AboutUs';
 import Video from './Blocks/Video';
 import FirstParallax from './Blocks/FirstParallax';
+import FirstComment from './Blocks/FirstComment';
+import SecondComment from './Blocks/SecondComment';
+import SecondParallax from './Blocks/SecondParallax';
 
 export default {
   components: {
@@ -19,6 +25,9 @@ export default {
     AboutUs,
     Video,
     FirstParallax,
+    FirstComment,
+    SecondComment,
+    SecondParallax,
   },
 };
 </script>

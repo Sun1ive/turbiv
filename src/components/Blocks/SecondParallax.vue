@@ -3,7 +3,7 @@
     <div class="wrapper">
       <div class="container-fluid">
         <div class="row">
-          <img class="logo-parallax" src="../../assets/logo.png" alt="logo">
+          <img class="logo-parallax" src="../../assets/logo1.png" alt="logo">
         </div>
       </div>
     </div>
