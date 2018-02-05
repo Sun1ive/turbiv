@@ -4,6 +4,7 @@ import 'swiper/dist/css/swiper.min.css';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap-grid.min.css';
 import VueScrollTo from 'vue-scrollto';
+import Vuelidate from 'vuelidate';
 
 import { Vuetify, VParallax } from 'vuetify';
 import 'vuetify/dist/vuetify.min.css';
@@ -15,6 +16,7 @@ import Form from './components/Shared/Form';
 import '../src/style/main.styl';
 
 Vue.use(VueSwiper);
+Vue.use(Vuelidate);
 Vue.use(VueScrollTo, {
   duration: 1000,
   easing: 'linear',

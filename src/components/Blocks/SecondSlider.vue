@@ -40,6 +40,7 @@ export default {
   font-weight bold
   background-size cover !important
   background-repeat no-repeat !important
+  background-position 0 -35px !important
   width 100%
 
 </style>

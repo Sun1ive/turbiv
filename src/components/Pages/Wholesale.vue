@@ -1,5 +1,5 @@
 <template>
-  <div class="bedroom">
+  <div class="wholesale">
     <div class="wrapper">
       <div class="container-fluid">
         <div class="row align-items-center">
@@ -24,11 +24,22 @@
             <p>
             У нас персональный подход к каждому потенциальному клиенту, поэтому если у Вас есть дополнительные вопросы, с радостью свяжемся с Вами и найдем решение. Вы останетесь довольны сотрудничеством с нами!</p>
             <p class="fillForm">Для этого предлагаем Вам заполнить форму:</p>
-            <button class="my-btn">
+            <button class="my-btn  hvr hvr-sweep-to-left" @click="isActive = !isActive">
               <i class="icon material-icons">email</i>Связаться
             </button>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="modal" v-show="isActive">
+      <div class="modal-content">
+        <Form :white="true">
+          <div 
+            class="close" 
+            slot="close"
+            @click="isActive = !isActive"
+          />
+        </Form>
       </div>
     </div>
   </div>
@@ -44,13 +55,16 @@ export default {
       { src: '/static/slider/2.jpg' },
       { src: '/static/parallax/1.jpg' },
     ],
+    isActive: false,
   }),
 };
 </script>
 
 <style scoped lang="stylus">
-.bedroom
-  padding 4rem 0
+.wholesale
+  min-height 80vh
+  display flex
+  align-items center
 
 .slider-img
   height 450px
