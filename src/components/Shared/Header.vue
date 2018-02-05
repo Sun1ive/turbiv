@@ -10,7 +10,7 @@
             <div class="row">
               <div class="col details" v-for="item in contacts" :key="item.title">
                 <i class="icon material-icons" v-text="item.icon" />
-                <div class="contacts">
+                <div class="contact">
                   <p>{{ item.detailsOne }}</p>
                   <p>{{ item.detailsTwo }}</p>
                 </div>

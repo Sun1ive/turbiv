@@ -25,11 +25,23 @@ export default {
     menu: [
       { title: 'Главная', el: 'header', icon: 'home' },
       { title: 'О нас', el: '.aboutUs', icon: 'star' },
-      { title: 'Контакты', el: '#contact', icon: 'star' },
-      { title: 'Наши товары', el: '#products', icon: 'star' },
+      { title: 'Контакты', el: '.contacts', icon: 'star' },
+      { title: 'Наши товары', el: '.products', icon: 'star' },
     ],
     fixed: false,
   }),
+  methods: {
+    location(button) {
+      if (this.$route.path !== '/') {
+        this.$router.push('/');
+        setTimeout(() => {
+          this.$scrollTo(button.el, 1000);
+        }, 750);
+      } else {
+        this.$scrollTo(button.el, 1000);
+      }
+    },
+  },
 };
 </script>
 

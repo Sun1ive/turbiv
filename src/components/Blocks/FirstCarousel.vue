@@ -14,6 +14,8 @@
 </template>
 
 <script>
+import swiperOptions from '@/helpers/options.js';
+
 export default {
   data: () => ({
     items: [
@@ -34,19 +36,7 @@ export default {
         text: 'Продажа ткани в рулонах',
       },
     ],
-    swiperOptions: {
-      loop: true,
-      effect: 'fade',
-      speed: 1000,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    },
+    swiperOptions,
   }),
 };
 </script>

@@ -14,27 +14,17 @@
 </template>
 
 <script>
+import swiperOptions from '@/helpers/options.js';
+
 export default {
   data: () => ({
     items: [
-      { src: '/static/slider2/china.jpg', },
-      { src: '/static/slider2/1.jpg', },
-      { src: '/static/slider2/2.jpg', },
-      { src: '/static/slider2/3.jpg', },
+      { src: '/static/slider2/china.jpg' },
+      { src: '/static/slider2/1.jpg' },
+      { src: '/static/slider2/2.jpg' },
+      { src: '/static/slider2/3.jpg' },
     ],
-    swiperOptions: {
-      loop: true,
-      effect: 'fade',
-      speed: 1000,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    },
+    swiperOptions,
   }),
 };
 </script>

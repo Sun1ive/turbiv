@@ -1,9 +1,18 @@
 <template>
   <form class="form">
     <div class="form__header">Связь с нами</div>
-    <input class="input" placeholder="Ваше Имя(обязательно)">
-    <input type="email" class="input" placeholder="Ваш email(обязательно)">
-    <input type="number" class="input" placeholder="Ваш телефон(обязательно)">
+    <input 
+      type="text" 
+      class="input"
+      placeholder="Ваше Имя(обязательно)">
+    <input 
+      type="email" 
+      class="input"
+      placeholder="Ваш email(обязательно)">
+    <input 
+      type="number" 
+      class="input"
+      placeholder="Ваш телефон(обязательно)">
     <button class="my-btn" type="submit">Отправить</button>
   </form>
 </template>
