@@ -1,6 +1,6 @@
 <template>
   <div class="scrolltop" @click="scrollToTop">
-    <i class="material-icons">keyboard_arrow_up</i>
+    <i class="icon material-icons">keyboard_arrow_up</i>
   </div>
 </template>
 
