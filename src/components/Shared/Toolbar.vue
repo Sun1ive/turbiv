@@ -19,7 +19,7 @@
             <div class="col">
               <ul class="button-menu">
                 <li>
-                  <button class="my-btn hvr-sweep-to-left">Связаться</button>
+                  <Button @click.native="$emit('showModal')" />
                 </li>
               </ul>
             </div>

@@ -28,7 +28,7 @@ export default {
         text: 'Исполнение заказа из материала заказчика',
       },
       {
-        src: '/static/slider/4.jpg',
+        src: '/static/slider/3.jpg',
         text: 'Производство небольших партий товаров (мелкий ОПТ)',
       },
       {
@@ -43,7 +43,9 @@ export default {
 
 <style scoped lang="stylus">
 .slider-img
-  background-position 0 -80px !important
+  // background-position 0 -80px !important
+  background-size cover
+  background-position center center
   min-height 700px
   display flex
   align-items center
@@ -54,4 +56,8 @@ export default {
   font-weight bold
   font-family 'Open Sans', Arial, Helvetica, sans-serif
   width 100%
+
+@media (max-width 1300px)
+  .slider-img
+    min-height 500px
 </style>

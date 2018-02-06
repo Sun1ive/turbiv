@@ -11,5 +11,6 @@
 
 
 <style scoped lang="stylus">
-
+.img
+  margin-top 5.5rem
 </style>

@@ -1,11 +1,22 @@
 <template>
   <div id="app">
-    <Header />
+    <Header @showModal="isActive = !isActive" />
     <transition name="fade" mode="out-in">
       <router-view/>
     </transition>
     <Footer />
     <ScrollTop />
+    <div class="modal" v-show="isActive">
+      <div class="modal-content">
+        <Form :white="true">
+          <div 
+            class="close" 
+            slot="close"
+            @click="isActive = !isActive"
+          />
+        </Form>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -20,6 +31,9 @@ export default {
     Footer,
     ScrollTop,
   },
+  data: () => ({
+    isActive: false,
+  }),
 };
 </script>
 

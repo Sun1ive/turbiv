@@ -25,7 +25,7 @@
         </div>
       </div>
     </div>
-    <Toolbar />
+    <Toolbar @showModal="$emit('showModal')" />
   </header> 
 </template>
 

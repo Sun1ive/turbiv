@@ -1,5 +1,9 @@
 <template>
-  <form class="form" :class="{ white: white }">
+  <form 
+    class="form" 
+    :class="{ white: white }"
+    @submit.prevent="onSubmit"
+  >
     <slot name="close" />
     <div class="form__header">Связь с нами</div>
     <input 
@@ -25,7 +29,7 @@
       v-model.lazy.number="phone"
       label="Ваш телефон (Обязательно)"
       :error="$v.phone.$error">
-    <button class="my-btn hvr hvr-sweep-to-left" type="submit">Отправить</button>
+    <Button />
   </form>
 </template>
 

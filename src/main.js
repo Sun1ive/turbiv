@@ -10,6 +10,7 @@ import App from './App';
 import router from './router';
 import Information from './components/Templates/Infomation';
 import Form from './components/Shared/Form';
+import Button from './components/Shared/Button';
 import '../src/style/main.styl';
 
 Vue.use(VueSwiper);
@@ -27,6 +28,7 @@ Vue.use(Vuetify, {
 });
 Vue.component('Information', Information);
 Vue.component('Form', Form);
+Vue.component('Button', Button)
 
 Vue.config.productionTip = false;
 
