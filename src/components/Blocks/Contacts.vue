@@ -10,7 +10,7 @@
             </div>
             <div class="text">NUVOLA – Ваш надежный партнер, который может взять на себя реализацию Ваших задач. Работаем с заказами по Украине и странам Европы</div>
           </div>
-          <div class="col col-3">
+          <div class="col col-4 col-sm-5 col-xs-6">
             <Form />
           </div>
         </div>
