@@ -8,7 +8,6 @@
               <ul>
                 <li 
                   @click="location(button)"
-                  class="menuButton"
                   v-for="button in menu" 
                   :key="button.title" 
                   flat
@@ -41,7 +40,6 @@ export default {
     ],
     fixed: false,
   }),
-
   created() {
     window.addEventListener('scroll', this.checkPos);
   },
@@ -61,7 +59,7 @@ export default {
     },
     checkPos() {
       const pos = window.pageYOffset;
-      if (pos >= 1500) {
+      if (pos >= 1000) {
         this.fixed = true;
       } else {
         this.fixed = false;
@@ -88,7 +86,7 @@ export default {
       transition .4s
       &:nth-child(2)
       &:nth-child(4)
-        margin 0 1rem
+        margin 0 2rem
       &:hover
         color #0092D5
         cursor pointer

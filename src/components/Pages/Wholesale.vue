@@ -49,10 +49,7 @@ import swiperOptions from '@/helpers/options.js';
 export default {
   data: () => ({
     swiperOptions,
-    items: [
-      { src: '/static/slider/2.jpg' },
-      { src: '/static/parallax/1.jpg' },
-    ],
+    items: [{ src: '/static/slider/2.jpg' }, { src: '/static/parallax/1.jpg' }],
     isActive: false,
   }),
 };
@@ -63,6 +60,7 @@ export default {
   min-height 80vh
   display flex
   align-items center
+  padding 5rem 0
 
 .slider-img
   height 450px

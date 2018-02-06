@@ -70,6 +70,7 @@ export default {
   min-height 80vh
   display flex
   align-items center
+  padding 5rem 0
 
 .slider-img
   height 450px
