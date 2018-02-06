@@ -20,4 +20,6 @@
   margin 0 auto
   &:hover
     cursor pointer
+  .icon
+    margin-right .7rem
 </style>

@@ -1,12 +1,9 @@
 <template>
   <swiper :options="swiperOptions">
     <swiper-slide 
-      v-for="item in items" 
-      :key="item.text">
-      <div 
-        :style="{ background: 'url(' + item.src + ')' ,}" 
-        class="slider-img"
-      />
+      v-for="(item, i) in items" 
+      :key="i">
+      <img :src="item.src" class="slider-img" alt="slide">
     </swiper-slide>
     <div class="swiper-button-prev" slot="button-prev" />
     <div class="swiper-button-next" slot="button-next" />
@@ -31,16 +28,7 @@ export default {
 
 <style scoped lang="stylus">
 .slider-img
-  display flex
-  align-items center
-  justify-content center
-  font-size 5rem
-  color #fff
-  text-align center
-  font-weight bold
-  background-size cover !important
-  background-repeat no-repeat !important
-  background-position 0 -35px !important
   width 100%
+  height 380px
 
 </style>

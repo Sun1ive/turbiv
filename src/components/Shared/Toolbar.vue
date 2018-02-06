@@ -97,8 +97,7 @@ export default {
   position fixed
   top 0
   left 0
-  z-index 5
-  opacity 0.3
+  z-index 3
   transition .5s ease
   width 100%
   animation showFixed 1s forwards linear
