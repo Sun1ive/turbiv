@@ -77,6 +77,7 @@ export default {
   flex-direction column
   padding 2rem
   position relative
+  min-width 400px
   &__header
     font-size 2rem
     font-weight bold

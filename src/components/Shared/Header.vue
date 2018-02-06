@@ -4,7 +4,12 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-6">
-            <img class="logo" src="../../assets/logo.png" alt="">
+            <img 
+              class="logo" 
+              src="../../assets/logo.png" 
+              alt="logo"
+              @click="$router.push('/')"
+            >
           </div>
           <div class="col-6">
             <div class="row">
@@ -65,4 +70,6 @@ export default {
       margin-left 1rem
       color #333
 
+.logo
+  cursor pointer
 </style>
