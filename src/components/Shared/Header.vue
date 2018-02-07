@@ -36,40 +36,40 @@ export default {
   components: {
     Toolbar,
   },
-  data: () => ({
-    contacts: [
-      {
-        title: 'phone',
-        icon: 'phone',
-        detailsOne: '‎+380969049987',
-        detailsTwo: '‎043242158',
-      },
-      {
-        title: 'address',
-        icon: 'room',
-        detailsOne: 'г. Турбов, ул. Мира, 14',
-        detailsTwo: 'Винницкая обл., Липовецкий р-н',
-      },
-    ],
-  }),
+  computed: {
+    contacts() {
+      if (this.$i18n.locale === 'ru') {
+        return this.$i18n.messages.ru.contacts;
+      }
+      return this.$i18n.messages.en.contacts;
+    },
+  },
 };
 </script>
 
 
 <style scoped lang="stylus">
-.row
-  min-height 100px
-  align-items center
-  .icon
-    font-size 2.5rem
-    color #006FB2
-  .details
-    display flex
-    align-items center
-    p
-      margin-left 1rem
-      color #333
+.row {
+  min-height: 100px;
+  align-items: center;
 
-.logo
-  cursor pointer
+  .icon {
+    font-size: 2.5rem;
+    color: #006FB2;
+  }
+
+  .details {
+    display: flex;
+    align-items: center;
+
+    p {
+      margin-left: 1rem;
+      color: #333;
+    }
+  }
+}
+
+.logo {
+  cursor: pointer;
+}
 </style>

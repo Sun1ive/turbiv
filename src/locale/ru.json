@@ -1,0 +1,23 @@
+{
+  "connect": "Связаться",
+  "contacts": [
+    {
+      "title": "phone",
+      "icon": "phone",
+      "detailsOne": "+380969049987",
+      "detailsTwo": "‎0 (4358) 4 21 58‬"
+    },
+    {
+      "title": "address",
+      "icon": "room",
+      "detailsOne": "г. Турбов, ул. Мира, 14",
+      "detailsTwo": "Винницкая обл., Липовецкий р-н"
+    }
+  ],
+  "menu": [
+    { "title": "Главная", "el": "header", "icon": "home" },
+    { "title": "О Нас", "el": ".aboutUs", "icon": "star" },
+    { "title": "Контакты", "el": ".contacts", "icon": "star" },
+    { "title": "Наши товары", "el": ".products", "icon": "star" }
+  ]
+}

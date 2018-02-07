@@ -1,0 +1,23 @@
+{
+  "connect": "Connect with us",
+  "contacts": [
+    {
+      "title": "phone",
+      "icon": "phone",
+      "detailsOne": "+380969049987",
+      "detailsTwo": "‎0 (4358) 4 21 58‬"
+    },
+    {
+      "title": "address",
+      "icon": "room",
+      "detailsOne": "Turbov city, Mira street, 14",
+      "detailsTwo": "Vinnitsya region, Lipovets district"
+    }
+  ],
+  "menu": [
+    { "title": "Home", "el": "header", "icon": "home" },
+    { "title": "About us", "el": ".aboutUs", "icon": "star" },
+    { "title": "Contacts", "el": ".contacts", "icon": "star" },
+    { "title": "Our products", "el": ".products", "icon": "star" }
+  ]
+}

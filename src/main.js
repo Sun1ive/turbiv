@@ -14,6 +14,7 @@ import Information from './components/Templates/Infomation';
 import Form from './components/Shared/Form';
 import Button from './components/Shared/Button';
 import '../src/style/main.styl';
+import { i18n } from './locale';
 
 Vue.use(VueSwiper);
 Vue.use(Vuelidate);
@@ -37,6 +38,7 @@ Vue.config.productionTip = false;
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  i18n,
   router,
   mounted() {
     AOS.init({
