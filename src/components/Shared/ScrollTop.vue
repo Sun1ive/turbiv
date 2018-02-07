@@ -7,7 +7,7 @@
 <script>
 export default {
   mounted() {
-    window.addEventListener('scroll', this.scrollTop);
+    window.addEventListener('scroll', this.scrollTop, { passive: true });
   },
   beforeDestroy() {
     window.removeEventListener('scroll', this.scrollTop);
@@ -30,52 +30,66 @@ export default {
 </script>
 
 <style scoped lang='stylus'>
-.scrolltop
-  width 70px
-  height 70px
-  background-color #fff
-  border 1px solid #c0c0c0
-  position fixed
-  bottom -150px
-  right 30px
-  border-radius 50%
-  cursor pointer
-  opacity 0.3
-  transition .4s linear
-  animation topDown 2s linear infinite alternate
-  z-index 15
-  .icon
-    position absolute
-    top 50%
-    left 50%
-    transform translate(-50%,-50%)
-    font-size 5rem
-  &:hover
-    background-color rgba(0,159,227,1)
-    opacity 1
-    transition .4s linear
-    animation-play-state paused
-    border-color rgba(0,159,227,1)
-    .icon
-      color #fff
+.scrolltop {
+  width: 70px;
+  height: 70px;
+  background-color: #fff;
+  border: 1px solid #c0c0c0;
+  position: fixed;
+  bottom: -150px;
+  right: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.3;
+  transition: 0.4s linear;
+  animation: topDown 2s linear infinite alternate;
+  z-index: 15;
 
-.visible
-  display block
-  bottom 9%
-  right 30px
+  .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+  }
 
-@keyframes topDown {
-  from {
-    transform translateY(0)
-  } to {
-    transform translateY(5px)
+  &:hover {
+    background-color: rgba(0, 159, 227, 1);
+    opacity: 1;
+    transition: 0.4s linear;
+    animation-play-state: paused;
+    border-color: rgba(0, 159, 227, 1);
+
+    .icon {
+      color: #fff;
+    }
   }
 }
 
-@media (max-width 400px)
-  .scrolltop
-    height 65px
-    width 65px
-  .visible
-    bottom 11%
+.visible {
+  display: block;
+  bottom: 9%;
+  right: 30px;
+}
+
+@keyframes topDown {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(5px);
+  }
+}
+
+@media (max-width: 400px) {
+  .scrolltop {
+    height: 65px;
+    width: 65px;
+  }
+
+  .visible {
+    bottom: 11%;
+  }
+}
 </style>

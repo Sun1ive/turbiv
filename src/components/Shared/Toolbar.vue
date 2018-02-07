@@ -52,7 +52,7 @@ export default {
     },
   },
   created() {
-    window.addEventListener('scroll', this.checkPos);
+    window.addEventListener('scroll', this.checkPos, { passive: true });
   },
   beforeDestroy() {
     window.removeEventListener('scroll', this.checkPos);
