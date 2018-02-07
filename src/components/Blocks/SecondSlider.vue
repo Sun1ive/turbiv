@@ -29,7 +29,7 @@ export default {
 <style scoped lang="stylus">
 .slider-img
   width 100%
-  height 535px
+  height 550px
 
 @media (max-width 1600px)
   .slider-img
@@ -42,5 +42,9 @@ export default {
 @media (max-width 1300px)
   .slider-img
     height 400px
+
+@media (max-width 1200px)
+  .slider-img
+    height 320px
 
 </style>

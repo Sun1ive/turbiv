@@ -49,43 +49,53 @@ import swiperOptions from '@/helpers/options.js';
 export default {
   data: () => ({
     swiperOptions,
-    items: [{ src: '/static/slider/2.jpg' }, { src: '/static/parallax/1.jpg' }],
+    items: [{ src: '/static/slider/2.jpg' }],
     isActive: false,
   }),
 };
 </script>
 
 <style scoped lang="stylus">
-.wholesale
-  min-height 80vh
-  display flex
-  align-items center
-  padding 5rem 0
+.wholesale {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  padding: 5rem 0;
+}
 
-.slider-img
-  height 450px
-  display flex
-  align-items center
-  justify-content center
-  font-size 5rem
-  color #fff
-  text-align center
-  font-weight bold
-  background-size cover !important
-  background-repeat no-repeat !important
+.slider-img {
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
 
-.text
-  text-align center
-  h1
-    margin-bottom 2rem
-  p
-    text-align left
-    text-indent 3rem
-  .fillForm
-    text-align center
-    text-indent inherit
-    margin 1rem 0
+.text {
+  text-align: center;
 
-.icon
-  margin-right 1rem
+  h1 {
+    margin-bottom: 2rem;
+  }
+
+  p {
+    text-align: left;
+    text-indent: 3rem;
+  }
+
+  .fillForm {
+    text-align: center;
+    text-indent: inherit;
+    margin: 1rem 0;
+  }
+}
+
+.icon {
+  margin-right: 1rem;
+}
 </style>

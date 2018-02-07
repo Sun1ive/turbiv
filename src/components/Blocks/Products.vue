@@ -27,7 +27,11 @@
 export default {
   data: () => ({
     products: [
-      { title: 'Производство товаров для спальни', path: '/bedroom', src: '/static/products/1.jpg' },
+      {
+        title: 'Производство товаров для спальни',
+        path: '/bedroom',
+        src: '/static/products/1.jpg',
+      },
       { title: 'Оптовая продажа ткани', path: '/wholesale', src: '/static/products/2.jpg' },
     ],
   }),
@@ -35,25 +39,32 @@ export default {
 </script>
 
 <style scoped lang="stylus">
-.products
-  padding 3rem 0
-  .head-titleform
-    margin-bottom 2rem
+.products {
+  padding: 3rem 0;
 
-.product
-  display flex
-  width 100%
-  height 550px
-  justify-content center
-  align-items center
-  cursor pointer
-  text-align center
-  color #fff
-  font-size 2rem
-  z-index 2
-  transition .4s
-  font-weight bold
-  &:hover
-    color #006ead
+  .head-title {
+    margin-bottom: 2rem;
+  }
+}
 
+.product {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  text-shadow: 1px 1px 10px #006ead;
+  z-index: 2;
+  transition: 0.4s linear;
+  font-weight: bold;
+
+  &:hover {
+    color: #006ead;
+    text-shadow: none;
+  }
+}
 </style>
