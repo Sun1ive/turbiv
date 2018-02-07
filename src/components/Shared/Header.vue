@@ -42,7 +42,7 @@ export default {
         title: 'phone',
         icon: 'phone',
         detailsOne: '‎+380969049987',
-        detailsTwo: 'info@nuvola.com.ua',
+        detailsTwo: '‎043242158',
       },
       {
         title: 'address',
