@@ -21,7 +21,7 @@
             <h1>{{ $t('bedroom products') }}</h1>
             <p align="justify">{{ $t('bedroom one') }}</p>
             <p align="justify">{{ $t('cooperation') }}</p>
-            <p class="fillForm">{{ $t('bedroom three') }}</p>
+            <p class="fillForm">{{ $t('fill form') }}</p>
             <Button @click.native="isActive = !isActive" />
           </div>
         </div>
