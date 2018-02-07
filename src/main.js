@@ -1,18 +1,18 @@
 import Vue from 'vue';
 import VueSwiper from 'vue-awesome-swiper';
 import 'swiper/dist/css/swiper.min.css';
-// import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap-grid.min.css';
 import VueScrollTo from 'vue-scrollto';
 import Vuelidate from 'vuelidate';
-
 import { Vuetify, VParallax } from 'vuetify';
-import 'vuetify/dist/vuetify.min.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import App from './App';
 import router from './router';
 import Information from './components/Templates/Infomation';
 import Form from './components/Shared/Form';
+import Button from './components/Shared/Button';
 import '../src/style/main.styl';
 
 Vue.use(VueSwiper);
@@ -30,6 +30,7 @@ Vue.use(Vuetify, {
 });
 Vue.component('Information', Information);
 Vue.component('Form', Form);
+Vue.component('Button', Button);
 
 Vue.config.productionTip = false;
 
@@ -37,5 +38,11 @@ Vue.config.productionTip = false;
 new Vue({
   el: '#app',
   router,
+  mounted() {
+    AOS.init({
+      offset: 200,
+      duration: 600
+    });
+  },
   render: h => h(App),
 });

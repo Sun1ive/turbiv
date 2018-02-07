@@ -1,18 +1,28 @@
 <template>
   <nav>
-    <div class="toolbar">
+    <div class="toolbar" :class="{ fixed: fixed }">
       <div class="wrapper">
         <div class="container-fluid">
-          <ul>
-            <li 
-              @click="location(button)"
-              class="menuButton"
-              v-for="button in menu" 
-              :key="button.title" 
-              flat
-              :to="button.path"
-            >{{ button.title }}</li>
-          </ul>
+          <div class="row">
+            <div class="col">
+              <ul>
+                <li 
+                  @click="location(button)"
+                  v-for="button in menu" 
+                  :key="button.title" 
+                  flat
+                  :to="button.path"
+                >{{ button.title }}</li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul class="button-menu">
+                <li>
+                  <Button @click.native="$emit('showModal')" />
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -30,6 +40,12 @@ export default {
     ],
     fixed: false,
   }),
+  created() {
+    window.addEventListener('scroll', this.checkPos);
+  },
+  beforeDestroy() {
+    window.removeEventListener('scroll', this.checkPos);
+  },
   methods: {
     location(button) {
       if (this.$route.path !== '/') {
@@ -39,6 +55,14 @@ export default {
         }, 750);
       } else {
         this.$scrollTo(button.el, 1000);
+      }
+    },
+    checkPos() {
+      const pos = window.pageYOffset;
+      if (pos >= 1000) {
+        this.fixed = true;
+      } else {
+        this.fixed = false;
       }
     },
   },
@@ -62,19 +86,33 @@ export default {
       transition .4s
       &:nth-child(2)
       &:nth-child(4)
-        margin 0 1rem
+        margin 0 2rem
       &:hover
         color #0092D5
         cursor pointer
-
-
 
 .fixed
   position fixed
   top 0
   left 0
-  z-index 5
-  opacity 0.3
+  z-index 3
+  transition .5s ease
+  width 100%
+  animation showFixed 1s forwards linear
   &:hover
     opacity 1
+
+@keyframes showFixed {
+  from {
+    top -200px
+  } to {
+    top 0px
+  }
+}
+
+.button-menu
+  display flex
+  justify-content flex-end
+  .my-btn
+    height 35px
 </style>

@@ -4,7 +4,12 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-6">
-            <img class="logo" src="../../assets/logo.png" alt="">
+            <img 
+              class="logo" 
+              src="../../assets/logo.png" 
+              alt="logo"
+              @click="$router.push('/')"
+            >
           </div>
           <div class="col-6">
             <div class="row">
@@ -20,7 +25,7 @@
         </div>
       </div>
     </div>
-    <Toolbar />
+    <Toolbar @showModal="$emit('showModal')" />
   </header> 
 </template>
 
@@ -37,7 +42,7 @@ export default {
         title: 'phone',
         icon: 'phone',
         detailsOne: '‎+380969049987',
-        detailsTwo: 'info@nuvola.com.ua',
+        detailsTwo: '‎043242158',
       },
       {
         title: 'address',
@@ -65,4 +70,6 @@ export default {
       margin-left 1rem
       color #333
 
+.logo
+  cursor pointer
 </style>

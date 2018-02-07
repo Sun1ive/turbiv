@@ -13,9 +13,11 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "aos": "^2.2.0",
     "axios": "^0.17.1",
     "vue": "^2.5.13",
     "vue-awesome-swiper": "^3.1.2",
+    "vue-i18n": "^7.4.2",
     "vue-router": "^3.0.1",
     "vue-scrollto": "^2.8.0",
     "vuelidate": "^0.6.1",
@@ -85,5 +87,9 @@
     "node": ">= 6.0.0",
     "npm": ">= 3.0.0"
   },
-  "browserslist": ["> 1%", "last 10 versions", "not ie <= 8"]
+  "browserslist": [
+    "> 1%",
+    "last 10 versions",
+    "not ie <= 8"
+  ]
 }

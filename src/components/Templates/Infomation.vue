@@ -9,7 +9,7 @@
           <h1>
             <slot name="head" />
           </h1>
-          <p>
+          <p align="justify">
             <slot name="text" />
           </p>
         </div>

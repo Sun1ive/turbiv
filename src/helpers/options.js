@@ -3,7 +3,7 @@ export default {
   effect: 'fade',
   speed: 1000,
   autoplay: {
-    delay: 2500,
+    delay: 3500,
     disableOnInteraction: false,
   },
   navigation: {
