@@ -43,14 +43,14 @@ export default {
 
 <style scoped lang="stylus">
 .slider-img
-  // background-position 0 -80px !important
   min-height 700px
   display flex
   align-items center
   justify-content center
+  text-align center
   font-size 5rem
   color #fff
-  text-align center
+  text-shadow 2px 2px 10px #006ead
   font-weight bold
   font-family 'Open Sans', Arial, Helvetica, sans-serif
   width 100%
