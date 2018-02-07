@@ -1,9 +1,9 @@
 <template>
   <div class="htt-first">
     <information :reverse="true">
-      <template slot="head-title">Некоторые отзывы</template>
-      <template slot="head">Андрей - Директор компании НТТ (Румыния)</template>
-      <template slot="text">Уже 3 года являемся заказчиком продукции у данного производителя. Основной заказ - это комплекты постельного белья и наволочки. Мне нравится быстрота исполнения заказов и то что, оперативно вносятся изменения по нашей просьбе в способах пошива, упаковки и т.д. Хочу отметить, что наше сотрудничество сэкономило для меня не только время, но и большое количество средств, которые мы тратили на поиск и покупку ткани. NUVOLA сумела для нас получить лучшую цену на ткань у своего поставщика. Рекомендую данное предприятие для сотрудничества.</template>
+      <template slot="head-title">{{ $t('reviews') }}</template>
+      <template slot="head">{{ $t('andriy') }}</template>
+      <template slot="text">{{ $t('andriy_review') }}</template>
       <img slot="img" class="img" src="/static/blocks/andriy.jpg" alt="chobanu">
     </information>
   </div>
@@ -12,5 +12,6 @@
 
 <style scoped lang="stylus">
 .htt-first
-  padding 3rem 0
+  padding: 3rem 0
+
 </style>
