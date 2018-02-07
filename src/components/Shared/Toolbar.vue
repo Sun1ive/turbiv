@@ -85,72 +85,55 @@ export default {
 </script>
 
 <style scoped lang="stylus">
-.toolbar {
+.toolbar
   border-top: 1px solid #E1E1E1;
   border-bottom: 1px solid #E1E1E1;
   text-transform: uppercase;
   background-color: #fff;
   box-shadow: none;
   position: relative;
-
-  .lang {
+  .lang 
     position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  ul {
+    right: 0
+    top: 0
+  ul
     padding: 0;
     margin: 0;
     display: flex;
     align-items: center;
     min-height: 60px;
-
-    li {
+    li
       transition: 0.4s;
-
-      &:nth-child(2), &:nth-child(4) {
-        margin: 0 2rem;
-      }
-
-      &:hover {
+      &:nth-child(2), &:nth-child(4)
+        margin: 0 2rem
+      &:hover
         color: #0092D5;
         cursor: pointer;
-      }
-    }
-  }
-}
 
-.fixed {
+.fixed 
   position: fixed;
   top: 0;
   left: 0;
   z-index: 3;
   transition: 0.5s ease;
   width: 100%;
-  animation: showFixed 1s forwards linear;
-
-  &:hover {
-    opacity: 1;
-  }
-}
+  animation: showFixed .5s forwards linear;
+  &:hover 
+    opacity: 1
 
 @keyframes showFixed {
   from {
-    top: -200px;
+    top: -50px;
   }
-
   to {
     top: 0px;
   }
 }
 
-.button-menu {
+.button-menu
   display: flex;
   justify-content: flex-end;
+  .my-btn 
+    height: 35px
 
-  .my-btn {
-    height: 35px;
-  }
-}
 </style>
