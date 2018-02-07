@@ -5,7 +5,7 @@
     @submit.prevent="onSubmit"
   >
     <slot name="close" />
-    <div class="form__header">Связь с нами</div>
+    <div class="form__header">{{ $t('connect') }}</div>
     <input 
       type="text" 
       class="input"
@@ -98,8 +98,8 @@ export default {
 
 .close
   position absolute
-  right 5%
-  top 5%
+  right 0
+  top 0
   width 25px
   height 25px
   background-image url('/static/close.svg')
