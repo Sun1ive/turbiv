@@ -1,5 +1,8 @@
 {
   "connect": "Connect with us",
+  "about us": "About Us",
+  "company":
+    "Our company was established in 2016. The main tasks of the production, at the first stage, were the servicing of just one, but a large customer, who is still a regular partner to this day. We work every day to improve our technological line and increase the professional training of personnel. This approach allows us to receive a large number of new orders, in the confirmation of which, we already have a positive experience of serving wholesale orders not only from Ukraine, but also from several countries in Europe. We consider our strength not only the quality and speed, but also our cooperation and agreements with large Asian factories for the production of textiles. This allows you to get the best prices, which in turn affects the reduction in the final cost of products for the customer.",
   "contacts": [
     {
       "title": "phone",
@@ -19,5 +22,10 @@
     { "title": "About us", "el": ".aboutUs", "icon": "star" },
     { "title": "Contacts", "el": ".contacts", "icon": "star" },
     { "title": "Our products", "el": ".products", "icon": "star" }
+  ],
+  "advantages": [
+    { "src": "/static/advantages/1.jpg", "first": "Fast", "second": "order execution" },
+    { "src": "/static/advantages/2.jpg", "first": "Competitive", "second": "prices" },
+    { "src": "/static/advantages/3.jpg", "first": "Orders from", "second": "4 EUROPEAN countries" }
   ]
 }
