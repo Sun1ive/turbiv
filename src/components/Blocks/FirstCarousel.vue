@@ -42,20 +42,23 @@ export default {
 </script>
 
 <style scoped lang="stylus">
-.slider-img
-  min-height 700px
-  display flex
-  align-items center
-  justify-content center
-  text-align center
-  font-size 5rem
-  color #fff
-  text-shadow 2px 2px 10px #006ead
-  font-weight bold
-  font-family 'Open Sans', Arial, Helvetica, sans-serif
-  width 100%
+.slider-img {
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 5rem;
+  color: #fff;
+  text-shadow: 2px 2px 10px #006ead;
+  font-weight: bold;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  width: 100%;
+}
 
-@media (max-width 1300px)
-  .slider-img
-    min-height 500px
+@media (max-width: 1300px) {
+  .slider-img {
+    min-height: 500px;
+  }
+}
 </style>
