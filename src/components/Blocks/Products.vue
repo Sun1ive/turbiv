@@ -4,7 +4,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col">
-            <div class="head-title">Некоторые наши заказы</div>
+            <div class="head-title">{{ $t('some of our orders') }}</div>
           </div>
         </div>
         <div class="row justify-content-between">

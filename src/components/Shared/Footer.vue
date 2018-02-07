@@ -3,7 +3,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-4">
-          &copy; <a href="https://nuvola.com.ua" target="_blank">Nuvola</a> г. Турбов, ул. Мира, 14 Винницкая обл., Липовецкий р-н
+          <a href="https://nuvola.com.ua" target="_blank">&copy; Nuvola</a>
         </div>
       </div>
     </div>
@@ -22,4 +22,6 @@ footer
     .col-4
       color #fff
       font-size .9rem
+      a
+        font-size 1.3rem
 </style>

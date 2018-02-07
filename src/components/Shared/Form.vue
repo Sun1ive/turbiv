@@ -9,25 +9,23 @@
     <input 
       type="text" 
       class="input"
-      placeholder="Ваше Имя(обязательно)"
+      :placeholder="$t('your name')"
       @blur="$v.name.$touch()"
       :error="$v.name.$error"
       v-model.lazy.trim="name">
     <input 
       type="email" 
       class="input"
-      placeholder="Ваш email(обязательно)"
+      :placeholder="$t('your email')"
       @blur="$v.email.$touch()" 
       v-model.lazy.trim="email"
-      label="Ваш email (Обязательно)"
       :error="$v.email.$error">
     <input 
       type="number" 
       class="input"
-      placeholder="Ваш телефон(обязательно)"
+      :placeholder="$t('your phone')"
       @blur="$v.phone.$touch()"
       v-model.lazy.number="phone"
-      label="Ваш телефон (Обязательно)"
       :error="$v.phone.$error">
     <Button />
   </form>
