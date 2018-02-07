@@ -41,6 +41,8 @@ new Vue({
   i18n,
   router,
   mounted() {
+    const locale = window.localStorage.getItem('locale');
+    this.$i18n.locale = locale;
     AOS.init({
       offset: 200,
       duration: 600

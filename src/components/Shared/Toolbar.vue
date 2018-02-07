@@ -77,6 +77,7 @@ export default {
       }
     },
     changeLang(lang) {
+      window.localStorage.setItem('locale', lang.toString());
       this.$i18n.locale = lang;
     },
   },
