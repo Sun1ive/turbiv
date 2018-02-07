@@ -1,9 +1,23 @@
 <template>
   <button class="my-btn hvr-sweep-to-left">
     <i class="icon material-icons">email</i>
-    {{ $t('connect') }}
+    {{ title }}
   </button>
 </template>
+
+<script>
+export default {
+  props: {
+    title: {
+      type: String,
+      default() {
+        console.log(this.$root.$i18n);
+      }
+    }
+  }
+}
+</script>
+
 
 <style scoped lang="stylus">
 .my-btn

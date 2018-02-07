@@ -5,10 +5,10 @@
         <div class="row justify-content-between">
           <div class="col col-7 flex">
             <div>
-              <div class="head-title">Про нас</div>     
+              <div class="head-title">{{ $t('about us') }}</div>     
               <img class="logo" src="../../assets/logo.png" alt="logo">
             </div>
-            <div class="text">NUVOLA – Ваш надежный партнер, который может взять на себя реализацию Ваших задач. Работаем с заказами по Украине и странам Европы</div>
+            <div class="text">{{ $t('nuvola') }}</div>
           </div>
           <div class="col col-4 col-sm-5 col-xs-6">
             <Form />

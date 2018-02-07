@@ -10,6 +10,8 @@
   "alexandr": "Alexander - one of the largest firms selling textiles (Ukraine)",
   "alexandr_review":
     "At the end of 2017, they decided to give part of the work for the sewing of NUVOLA's bedding products. To fulfill the order, we used our own raw materials. We were satisfied with both speed and quality of tailoring. It was also surprising that the price of works was lower than we paid for our orders, which were much larger in volume. We plan to continue cooperation and increase the volume of the order.",
+  "nuvola":
+    "NUVOLA is your reliable partner who can take on the realization of your tasks. We work with orders for Ukraine and Europe",
   "contacts": [
     {
       "title": "phone",
@@ -34,5 +36,17 @@
     { "src": "/static/advantages/1.jpg", "first": "Fast", "second": "order execution" },
     { "src": "/static/advantages/2.jpg", "first": "Competitive", "second": "prices" },
     { "src": "/static/advantages/3.jpg", "first": "Orders from", "second": "4 EUROPEAN countries" }
+  ],
+  "products": [
+    {
+      "title": "Manufacture of bedroom products",
+      "path": "/bedroom",
+      "src": "/static/products/1.jpg"
+    },
+    {
+      "title": "Wholesale of fabrics",
+      "path": "/wholesale",
+      "src": "/static/products/2.jpg"
+    }
   ]
 }

@@ -25,29 +25,25 @@
 
 <script>
 export default {
-  data: () => ({
-    products: [
-      {
-        title: 'Производство товаров для спальни',
-        path: '/bedroom',
-        src: '/static/products/1.jpg',
-      },
-      { title: 'Оптовая продажа ткани', path: '/wholesale', src: '/static/products/2.jpg' },
-    ],
-  }),
+  computed: {
+    products() {
+      if (this.$i18n.locale === 'ru') {
+        return this.$i18n.messages.ru.products
+      }
+      return this.$i18n.messages.en.products
+    }
+  }
 };
 </script>
 
 <style scoped lang="stylus">
-.products {
+.products
   padding: 3rem 0;
-
-  .head-title {
+  .head-title
     margin-bottom: 2rem;
-  }
-}
 
-.product {
+
+.product
   display: flex;
   width: 100%;
   height: 500px;
@@ -61,10 +57,8 @@ export default {
   z-index: 2;
   transition: 0.4s linear;
   font-weight: bold;
+  &:hover
+    color: #006ead
+    text-shadow: 1px 1px 5px #fff
 
-  &:hover {
-    color: #006ead;
-    text-shadow: none;
-  }
-}
 </style>
