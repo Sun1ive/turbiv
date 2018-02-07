@@ -5,6 +5,7 @@
   "your phone": "Your phone",
   "your email": "Your e-mail",
   "some of our orders": "Some of our orders",
+  "bedroom products": "Manufacture of bedroom products",
   "about us": "About Us",
   "company":
     "Our company was established in 2016. The main tasks of the production, at the first stage, were the servicing of just one, but a large customer, who is still a regular partner to this day. We work every day to improve our technological line and increase the professional training of personnel. This approach allows us to receive a large number of new orders, in the confirmation of which, we already have a positive experience of serving wholesale orders not only from Ukraine, but also from several countries in Europe. We consider our strength not only the quality and speed, but also our cooperation and agreements with large Asian factories for the production of textiles. This allows you to get the best prices, which in turn affects the reduction in the final cost of products for the customer.",
@@ -53,5 +54,8 @@
       "path": "/wholesale",
       "src": "/static/products/2.jpg"
     }
-  ]
+  ],
+  "bedroom one": "For comfort and comfort in the house meets a large number of decor elements. We are sure that a small role is played by the choice of home textiles. We are proud to say that tens of thousands of families from Europe have already evaluated our products. Why our customers and customers of our customers are satisfied with the products? It's simple: 1. We produce goods for our clients' bedrooms from high-quality and natural materials; 2. The prices that we offer our partners are able to withstand competition with any producers, which, given the high quality of the finished product, leaves no other choice.",
+  "bedroom two": "We have a personal approach to each potential client, so if you have additional questions, we will be happy to contact you and find a solution. You will be satisfied with the cooperation with us!",
+  "bedroom three": "For this we suggest you fill out the form:"
 }
