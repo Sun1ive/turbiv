@@ -4,9 +4,10 @@
       <div class="wrapper">
         <div class="container-fluid">
           <div class="row">
-            <div class="col">
-              <ul>
+            <div class="col-lg-6 col-md-7 col-sm-8">
+              <ul class="menu">
                 <li 
+                  class="menu__item"
                   @click="location(button)"
                   v-for="button in menu" 
                   :key="button.title" 
@@ -15,7 +16,7 @@
                 >{{ button.title }}</li>
               </ul>
             </div>
-            <div class="col">
+            <div class="col-lg-6 col-md-5 col-sm-4">
               <ul class="button-menu">
                 <li>
                   <Button @click.native="$emit('showModal')" />
@@ -25,14 +26,14 @@
           </div>
         </div>
       </div>
-      <ul class="lang">
+      <!-- <ul class="lang">
         <li 
           v-for="(locale, index) in locales" 
           :key="index"
           v-text="locale"
           @click="changeLang(locale)"
         />
-      </ul>
+      </ul> -->
     </div>
   </nav>
 </template>
@@ -94,11 +95,10 @@ export default {
   border-bottom: 1px solid #E1E1E1;
   text-transform: uppercase;
   background-color: #fff;
-  box-shadow: none;
   position: relative;
   .lang 
     position: absolute;
-    right: 45%
+    right: 40%
     top: 0
   ul
     padding: 0;
@@ -140,4 +140,22 @@ export default {
   .my-btn 
     height: 35px
 
+@media (max-width 720px)
+  .menu
+    font-size .7rem
+  .button-menu
+    li
+      button
+        width 170px
+        font-size 1rem
+    
+@media (max-width 575px)
+  .menu
+  .button-menu
+    justify-content center
+  .toolbar ul li:nth-child(2),
+  .toolbar ul li:nth-child(4)
+    margin 0 1rem
+  .menu
+    font-size .7rem
 </style>
