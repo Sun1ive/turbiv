@@ -3,7 +3,7 @@
     <div class="wrapper">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-6">
+          <div class="col-lg-6 col-md-4 col-sm-12">
             <img 
               class="logo" 
               src="../../assets/logo.png" 
@@ -11,15 +11,11 @@
               @click="$router.push('/')"
             >
           </div>
-          <div class="col-6">
-            <div class="row">
-              <div class="col details" v-for="item in contacts" :key="item.title">
-                <i class="icon material-icons" v-text="item.icon" />
-                <div class="contact">
-                  <p>{{ item.detailsOne }}</p>
-                  <p>{{ item.detailsTwo }}</p>
-                </div>
-              </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 details" v-for="item in contacts" :key="item.title">
+            <i class="icon material-icons" v-text="item.icon" />
+            <div class="contact">
+              <p>{{ item.detailsOne }}</p>
+              <p>{{ item.detailsTwo }}</p>
             </div>
           </div>
         </div>
@@ -53,27 +49,33 @@ export default {
 
 
 <style scoped lang="stylus">
-.row {
-  min-height: 100px;
-  align-items: center;
+.row
+  min-height: 100px
+  align-items: center
+  .icon
+    font-size: 2.5rem
+    color: #006FB2
+  .details
+    display: flex
+    align-items: center
+    p
+      margin-left: 1rem
+      color: #333
+.logo
+  cursor: pointer
 
-  .icon {
-    font-size: 2.5rem;
-    color: #006FB2;
-  }
+.col-sm-6
+  margin 1rem 0
 
-  .details {
-    display: flex;
-    align-items: center;
+.col-sm-12
+  text-align center
 
-    p {
-      margin-left: 1rem;
-      color: #333;
-    }
-  }
-}
+@media (max-width 400px)
+  .row
+    .icon
+      font-size 1.7rem
+    .details
+      justify-content center
+      font-size .8rem
 
-.logo {
-  cursor: pointer;
-}
 </style>
