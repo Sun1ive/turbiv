@@ -20,6 +20,7 @@
           <div class="col text">
             <h1>{{ $t('bedroom products') }}</h1>
             <p align="justify">{{ $t('bedroom one') }}</p>
+            <br>
             <p align="justify">{{ $t('cooperation') }}</p>
             <p class="fillForm">{{ $t('fill form') }}</p>
             <Button @click.native="isActive = !isActive" />

@@ -1,6 +1,10 @@
 <template>
   <div class="htt-first">
-    <information :reverse="true">
+    <information 
+      :reverse="true"
+      data-aos="fade-up-left"
+      data-aos-offset="600"
+    >
       <template slot="head-title">{{ $t('reviews') }}</template>
       <template slot="head">{{ $t('andriy') }}</template>
       <template slot="text">{{ $t('andriy_review') }}</template>

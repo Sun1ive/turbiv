@@ -51,8 +51,9 @@ new Vue({
       this.$i18n.locale = locale;
     }
     AOS.init({
-      offset: 200,
-      duration: 600,
+      duration: 750,
+      // disable: 'mobile'
+      disable: () => window.innerWidth < 1024
     });
   },
   render: h => h(App),

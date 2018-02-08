@@ -10,24 +10,31 @@
       type="text" 
       class="input"
       :placeholder="$t('your name')"
-      @blur="$v.name.$touch()"
-      :error="$v.name.$error"
-      v-model.lazy.trim="name">
+      v-model.lazy.trim="name"
+    >
+    <div 
+      class="error" 
+      v-if="$v.email.$error"
+    >Пожалуйста введите корректный e-mail</div>
     <input 
       type="email" 
       class="input"
       :placeholder="$t('your email')"
       @blur="$v.email.$touch()" 
       v-model.lazy.trim="email"
-      :error="$v.email.$error">
+    >
+    <div 
+      class="error" 
+      v-if="$v.phone.$error"
+    >Пожалуйста введите корректный телефон</div>
     <input 
       type="number" 
       class="input"
       :placeholder="$t('your phone')"
       @blur="$v.phone.$touch()"
       v-model.lazy.number="phone"
-      :error="$v.phone.$error">
-    <Button />
+    >
+    <Button :type="'submit'" />
   </form>
 </template>
 
@@ -95,6 +102,12 @@ export default {
 
 .white
   background-color #fff
+
+.error
+  color red
+  border 1px solid red
+  text-align center
+  padding .5rem 0
 
 .close
   position absolute

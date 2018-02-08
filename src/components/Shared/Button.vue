@@ -1,9 +1,24 @@
 <template>
-  <button class="my-btn hvr-sweep-to-left">
+  <button 
+    class="my-btn hvr-sweep-to-left"
+    :type="type"
+  >
     <i class="icon material-icons">email</i>
     {{ $t('connect') }}
   </button>
 </template>
+
+<script>
+export default {
+  props: {
+    type: {
+      type: String,
+      default: 'button'
+    }
+  }
+}
+</script>
+
 
 
 <style scoped lang="stylus">

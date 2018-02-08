@@ -8,7 +8,14 @@
           </div>
         </div>
         <div class="row justify-content-between">
-          <div class="col" v-for="item in products" :key="item.title">
+          <div 
+            class="col" 
+            v-for="item in products" 
+            :key="item.title"
+            data-aos="zoom-in"
+            data-aos-offset="600"
+            data-aos-easing="ease-in-sine"
+          >
             <div 
               class="product hvr-outline-out" 
               :style="{ background: 'url(' + item.src + ')', }"

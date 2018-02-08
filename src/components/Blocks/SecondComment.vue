@@ -1,6 +1,10 @@
 <template>
   <div class="htt-second">
-    <information>
+    <information 
+      data-aos="fade-up-right"
+      data-aos-offset="600"
+      data-aos-easing="ease-in-sine"
+    >
       <template slot="head-title">{{ $t('reviews') }}</template>
       <template slot="head">{{ $t('alexandr') }}</template>
       <template slot="text">{{ $t('alexandr_review') }}</template>
