@@ -55,30 +55,26 @@ export default {
 </script>
 
 <style scoped lang="stylus">
-.slider-img
-  min-height 450px
+
 
 .wholesale
-  min-height: 80vh;
-  display: flex;
-  align-items: center;
   padding: 5rem 0
-  flex-wrap wrap
-  justify-content space-between
+  .row
+    min-height 60vh
+    text-align center
+    align-items center
+    justify-content space-around
+  .col-sm-12
+    text-align center
+    .fillForm
+      margin 1rem 0
 
+.icon
+  margin-right: 1rem
 
-// .text 
-//   text-align: center;
-//   h1
-//     margin-bottom: 2rem;
-//   p 
-//     text-indent: 3rem;
-//   .fillForm 
-//     text-align: center
-//     text-indent: inherit
-//     margin: 1rem 0
-
-// .icon
-//   margin-right: 1rem
+@media (max-width 760px)
+  .wholesale
+    .row
+      justify-content center
 
 </style>
