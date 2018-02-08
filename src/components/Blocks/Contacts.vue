@@ -2,15 +2,15 @@
   <div class="contacts">
     <div class="wrapper">
       <div class="container-fluid">
-        <div class="row justify-content-between">
-          <div class="col col-7 flex">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 col-sm-12 flex">
             <div>
               <div class="head-title">{{ $t('about us') }}</div>     
               <img class="logo" src="../../assets/logo.png" alt="logo">
             </div>
             <div class="text">{{ $t('nuvola') }}</div>
           </div>
-          <div class="col col-4 col-sm-5 col-xs-6">
+          <div class="col-lg-4 col-md-6 col-sm-10 col-xs-12">
             <Form />
           </div>
         </div>
@@ -21,7 +21,6 @@
 
 <style scoped lang="stylus">
 .contacts
-  min-height 500px
   display flex
   align-items center
 .flex
@@ -32,4 +31,22 @@
   .text
     margin-left 3rem
     font-size 1.1rem
+
+@media (max-width 1300px)
+  .row
+    padding 3rem 0
+    flex-direction column
+    align-items center
+    justify-content space-between
+
+@media (max-width 460px)
+  .flex
+    flex-direction column
+    text-align center
+    justify-content space-between
+    .text
+      margin 0
+  .row
+    padding 0
+
 </style>
