@@ -40,7 +40,7 @@
 <script>
 export default {
   data: () => ({
-    locales: ['ru', 'en'],
+    locales: ['ru', 'en', 'ua'],
     fixed: false,
   }),
   computed: {
@@ -94,7 +94,7 @@ export default {
   position: relative;
   .lang 
     position: absolute;
-    right: 0
+    right: 45%
     top: 0
   ul
     padding: 0;
