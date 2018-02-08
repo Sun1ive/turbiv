@@ -3,7 +3,7 @@
     <div class="wrapper">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-6">
+          <div class="col-lg-6 col-md-4 col-sm-12">
             <img 
               class="logo" 
               src="../../assets/logo.png" 
@@ -11,15 +11,11 @@
               @click="$router.push('/')"
             >
           </div>
-          <div class="col-6">
-            <div class="row">
-              <div class="col details" v-for="item in contacts" :key="item.title">
-                <i class="icon material-icons" v-text="item.icon" />
-                <div class="contact">
-                  <p>{{ item.detailsOne }}</p>
-                  <p>{{ item.detailsTwo }}</p>
-                </div>
-              </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 details" v-for="item in contacts" :key="item.title">
+            <i class="icon material-icons" v-text="item.icon" />
+            <div class="contact">
+              <p>{{ item.detailsOne }}</p>
+              <p>{{ item.detailsTwo }}</p>
             </div>
           </div>
         </div>
@@ -36,40 +32,50 @@ export default {
   components: {
     Toolbar,
   },
-  data: () => ({
-    contacts: [
-      {
-        title: 'phone',
-        icon: 'phone',
-        detailsOne: '‎+380969049987',
-        detailsTwo: '‎043242158',
-      },
-      {
-        title: 'address',
-        icon: 'room',
-        detailsOne: 'г. Турбов, ул. Мира, 14',
-        detailsTwo: 'Винницкая обл., Липовецкий р-н',
-      },
-    ],
-  }),
+  computed: {
+    contacts() {
+      /* eslint-disable default-case */ /* eslint-disable no-unreachable */
+      switch (this.$root.locale) {
+        case 'en':
+          return this.$i18n.messages.en.contacts; break;
+        case 'ru':
+          return this.$i18n.messages.ru.contacts; break;
+      }
+      return this.$i18n.messages.ua.contacts;
+    },
+  },
 };
 </script>
 
 
 <style scoped lang="stylus">
 .row
-  min-height 100px
-  align-items center
+  min-height: 100px
+  align-items: center
   .icon
-    font-size 2.5rem
-    color #006FB2
+    font-size: 2.5rem
+    color: #006FB2
   .details
-    display flex
-    align-items center
+    display: flex
+    align-items: center
     p
-      margin-left 1rem
-      color #333
-
+      margin-left: 1rem
+      color: #333
 .logo
-  cursor pointer
+  cursor: pointer
+
+.col-sm-6
+  margin 1rem 0
+
+.col-sm-12
+  text-align center
+
+@media (max-width 400px)
+  .row
+    .icon
+      font-size 1.7rem
+    .details
+      justify-content center
+      font-size .8rem
+
 </style>

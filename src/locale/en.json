@@ -1,0 +1,68 @@
+{
+  "connect": "Connect with us",
+  "required": "required",
+  "your name": "Your name",
+  "your phone": "Your phone",
+  "your email": "Your e-mail",
+  "some of our orders": "Some of our orders",
+  "bedroom products": "Manufacture of bedroom products",
+  "about us": "About Us",
+  "company":
+    "Our company was established in 2016. The main tasks of the production, at the first stage, were the servicing of just one, but a large customer, who is still a regular partner to this day. We work every day to improve our technological line and increase the professional training of personnel. This approach allows us to receive a large number of new orders, in the confirmation of which, we already have a positive experience of serving wholesale orders not only from Ukraine, but also from several countries in Europe. We consider our strength not only the quality and speed, but also our cooperation and agreements with large Asian factories for the production of textiles. This allows you to get the best prices, which in turn affects the reduction in the final cost of products for the customer.",
+  "reviews": "Some reviews",
+  "andriy": "Andrey - Director of NTT (Romania)",
+  "andriy_review":
+    "For 3 years we have been a customer of this manufacturer's products. The basic order is a set of bed linen and pillowcases. I like the speed of execution of orders and the fact that promptly changes are made at our request in the ways of tailoring, packing, etc. I want to note that our cooperation saved for me not only time, but also a large amount of money that we spent on searching and buying cloth. NUVOLA managed for us to get the best price for the fabric from its supplier. I recommend this company for cooperation.",
+  "alexandr": "Alexander - one of the largest firms selling textiles (Ukraine)",
+  "alexandr_review":
+    "At the end of 2017, they decided to give part of the work for the sewing of NUVOLA's bedding products. To fulfill the order, we used our own raw materials. We were satisfied with both speed and quality of tailoring. It was also surprising that the price of works was lower than we paid for our orders, which were much larger in volume. We plan to continue cooperation and increase the volume of the order.",
+  "nuvola":
+    "NUVOLA is your reliable partner who can take on the realization of your tasks. We work with orders for Ukraine and Europe",
+  "contacts": [
+    {
+      "title": "phone",
+      "icon": "phone",
+      "detailsOne": "+380969049987",
+      "detailsTwo": "‎0 (4358) 4 21 58‬"
+    },
+    {
+      "title": "address",
+      "icon": "room",
+      "detailsOne": "Turbov city, Mira street, 14",
+      "detailsTwo": "Vinnitsya region, Lipovets district"
+    }
+  ],
+  "menu": [
+    { "title": "Home", "el": "header", "icon": "home" },
+    { "title": "About us", "el": ".aboutUs", "icon": "star" },
+    { "title": "Contacts", "el": ".contacts", "icon": "star" },
+    { "title": "Our products", "el": ".products", "icon": "star" }
+  ],
+  "advantages": [
+    { "src": "/static/advantages/1.jpg", "first": "Fast", "second": "order execution" },
+    { "src": "/static/advantages/2.jpg", "first": "Competitive", "second": "prices" },
+    { "src": "/static/advantages/3.jpg", "first": "Orders from", "second": "4 EUROPEAN countries" }
+  ],
+  "products": [
+    {
+      "title": "Manufacture of bedroom products",
+      "path": "/bedroom",
+      "src": "/static/products/1.jpg"
+    },
+    {
+      "title": "Wholesale of fabrics",
+      "path": "/wholesale",
+      "src": "/static/products/2.jpg"
+    }
+  ],
+  "bedroom one":
+    "For comfort and comfort in the house meets a large number of decor elements. We are sure that a small role is played by the choice of home textiles. We are proud to say that tens of thousands of families from Europe have already evaluated our products. Why our customers and customers of our customers are satisfied with the products? It's simple: 1. We produce goods for our clients' bedrooms from high-quality and natural materials; 2. The prices that we offer our partners are able to withstand competition with any producers, which, given the high quality of the finished product, leaves no other choice.",
+  "cooperation":
+    "We have a personal approach to each potential client, so if you have additional questions, we will be happy to contact you and find a solution. You will be satisfied with the cooperation with us!",
+  "fill form": "For this we suggest you fill out the form:",
+  "whosale title": "Wholesale of fabrics",
+  "whosale one":
+    "For today, our company is actively working to attract large orders for the production of home textiles. And due to large lots of orders and personal arrangements with our fabric partners, we get an excellent price. If necessary, we are ready to consider the requests for wholesale of fabric in rolls and agree on further cooperation.",
+  "error email": "Please enter a valid e-mail",
+  "error phone": "Please enter a valid phone number"
+}

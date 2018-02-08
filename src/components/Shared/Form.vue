@@ -5,31 +5,36 @@
     @submit.prevent="onSubmit"
   >
     <slot name="close" />
-    <div class="form__header">Связь с нами</div>
+    <div class="form__header">{{ $t('connect') }}</div>
     <input 
       type="text" 
       class="input"
-      placeholder="Ваше Имя(обязательно)"
-      @blur="$v.name.$touch()"
-      :error="$v.name.$error"
-      v-model.lazy.trim="name">
+      :placeholder="$t('your name')"
+      v-model.lazy.trim="name"
+    >
+    <div 
+      class="error" 
+      v-if="$v.email.$error"
+    >{{ $t('error email') }}</div>
     <input 
       type="email" 
       class="input"
-      placeholder="Ваш email(обязательно)"
+      :placeholder="$t('your email')"
       @blur="$v.email.$touch()" 
       v-model.lazy.trim="email"
-      label="Ваш email (Обязательно)"
-      :error="$v.email.$error">
+    >
+    <div 
+      class="error" 
+      v-if="$v.phone.$error"
+    >{{ $t('error phone') }}</div>
     <input 
       type="number" 
       class="input"
-      placeholder="Ваш телефон(обязательно)"
+      :placeholder="$t('your phone')"
       @blur="$v.phone.$touch()"
       v-model.lazy.number="phone"
-      label="Ваш телефон (Обязательно)"
-      :error="$v.phone.$error">
-    <Button />
+    >
+    <Button :type="'submit'" />
   </form>
 </template>
 
@@ -98,10 +103,16 @@ export default {
 .white
   background-color #fff
 
+.error
+  color red
+  border 1px solid red
+  text-align center
+  padding .5rem 0
+
 .close
   position absolute
-  right 5%
-  top 5%
+  right 0
+  top 0
   width 25px
   height 25px
   background-image url('/static/close.svg')

@@ -1,9 +1,13 @@
 <template>
   <div class="htt-second">
-    <information>
-      <template slot="head-title">Некоторые отзывы</template>
-      <template slot="head">Александр - одна из крупнейших фирм по продаже текстиля (Украина)</template>
-      <template slot="text">В конце 2017 года решили отдать на подряд часть работ, по пошиву постельной продукции компании NUVOLA. Для исполнения заказа использовали собственное сырье. Мы остались довольны и скоростью, и качеством пошива. Так же удивило то, что цена работ оказалась ниже, чем мы платили за наши заказы, которые были значительно большими по объёму. Планируем продолжить сотрудничество и увеличить объем заказа.</template>
+    <information 
+      data-aos="fade-up-right"
+      data-aos-offset="600"
+      data-aos-easing="ease-in-sine"
+    >
+      <template slot="head-title">{{ $t('reviews') }}</template>
+      <template slot="head">{{ $t('alexandr') }}</template>
+      <template slot="text">{{ $t('alexandr_review') }}</template>
       <img slot="img" class="img" src="/static/blocks/alexandr.jpg" alt="muzika">
     </information>
   </div>
@@ -12,5 +16,6 @@
 
 <style scoped lang="stylus">
 .htt-second
-  padding 3rem 0
+  padding: 3rem 0
+
 </style>

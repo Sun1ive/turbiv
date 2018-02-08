@@ -18,12 +18,11 @@
             </swiper>
           </div>
           <div class="col text">
-            <h1>Оптовая продажа ткани</h1>
-            <p>На сегодня наша компания ведет активную работу по привлечению крупных заказов на производство домашнего текстиля. И за счет крупных партий заказов и персональных договоренностей с нашими партнерами-производителями ткани, мы получаем отличную цену. При необходимости, готовы рассмотреть запросы по оптовой продаже ткани в рулонах и договориться о дальнейшем сотрудничестве.</p>
+            <h1>{{ $t('whosale title') }}</h1>
+            <p align="justify">{{ $t('whosale one') }}</p>
             <br>
-            <p>
-            У нас персональный подход к каждому потенциальному клиенту, поэтому если у Вас есть дополнительные вопросы, с радостью свяжемся с Вами и найдем решение. Вы останетесь довольны сотрудничеством с нами!</p>
-            <p class="fillForm">Для этого предлагаем Вам заполнить форму:</p>
+            <p align="justify">{{ $t('cooperation') }}</p>
+            <p class="fillForm">{{ $t('fill form') }}</p>
             <Button @click.native="isActive = !isActive" />
           </div>
         </div>
@@ -56,46 +55,36 @@ export default {
 </script>
 
 <style scoped lang="stylus">
-.wholesale {
+.wholesale
   min-height: 80vh;
   display: flex;
   align-items: center;
-  padding: 5rem 0;
-}
+  padding: 5rem 0
 
-.slider-img {
-  height: 450px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 5rem;
-  color: #fff;
+.slider-img
+  height: 450px
+  display: flex
+  align-items: center
+  justify-content: center
+  font-size: 5rem
+  color: #fff
+  text-align: center
+  font-weight: bold
+  background-size: cover !important
+  background-repeat: no-repeat !important
+
+.text 
   text-align: center;
-  font-weight: bold;
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
-}
-
-.text {
-  text-align: center;
-
-  h1 {
+  h1
     margin-bottom: 2rem;
-  }
-
-  p {
-    text-align: left;
+  p 
     text-indent: 3rem;
-  }
+  .fillForm 
+    text-align: center
+    text-indent: inherit
+    margin: 1rem 0
 
-  .fillForm {
-    text-align: center;
-    text-indent: inherit;
-    margin: 1rem 0;
-  }
-}
+.icon
+  margin-right: 1rem
 
-.icon {
-  margin-right: 1rem;
-}
 </style>

@@ -25,6 +25,14 @@
           </div>
         </div>
       </div>
+      <ul class="lang">
+        <li 
+          v-for="(locale, index) in locales" 
+          :key="index"
+          v-text="locale"
+          @click="changeLang(locale)"
+        />
+      </ul>
     </div>
   </nav>
 </template>
@@ -32,16 +40,23 @@
 <script>
 export default {
   data: () => ({
-    menu: [
-      { title: 'Главная', el: 'header', icon: 'home' },
-      { title: 'О нас', el: '.aboutUs', icon: 'star' },
-      { title: 'Контакты', el: '.contacts', icon: 'star' },
-      { title: 'Наши товары', el: '.products', icon: 'star' },
-    ],
+    locales: ['ru', 'en', 'ua'],
     fixed: false,
   }),
+  computed: {
+    menu() {
+      /* eslint-disable default-case */ /* eslint-disable no-unreachable */
+      switch (this.$root.locale) {
+        case 'en':
+          return this.$i18n.messages.en.menu; break;
+        case 'ru':
+          return this.$i18n.messages.ru.menu; break;
+      }
+      return this.$i18n.messages.ua.menu;
+    },
+  },
   created() {
-    window.addEventListener('scroll', this.checkPos);
+    window.addEventListener('scroll', this.checkPos, { passive: true });
   },
   beforeDestroy() {
     window.removeEventListener('scroll', this.checkPos);
@@ -65,54 +80,64 @@ export default {
         this.fixed = false;
       }
     },
+    changeLang(lang) {
+      window.localStorage.setItem('locale', lang.toString());
+      this.$i18n.locale = lang;
+    },
   },
 };
 </script>
 
 <style scoped lang="stylus">
 .toolbar
-  border-top 1px solid #E1E1E1
-  border-bottom 1px solid #E1E1E1
-  text-transform uppercase
-  background-color #fff
-  box-shadow none
+  border-top: 1px solid #E1E1E1;
+  border-bottom: 1px solid #E1E1E1;
+  text-transform: uppercase;
+  background-color: #fff;
+  box-shadow: none;
+  position: relative;
+  .lang 
+    position: absolute;
+    right: 45%
+    top: 0
   ul
-    padding 0
-    margin 0
-    display flex
-    align-items center
-    min-height 60px
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    min-height: 60px;
     li
-      transition .4s
-      &:nth-child(2)
-      &:nth-child(4)
-        margin 0 2rem
+      transition: 0.4s;
+      &:nth-child(2), &:nth-child(4)
+        margin: 0 2rem
       &:hover
-        color #0092D5
-        cursor pointer
+        color: #0092D5;
+        cursor: pointer;
 
-.fixed
-  position fixed
-  top 0
-  left 0
-  z-index 3
-  transition .5s ease
-  width 100%
-  animation showFixed 1s forwards linear
-  &:hover
-    opacity 1
+.fixed 
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  transition: 0.5s ease;
+  width: 100%;
+  animation: showFixed .5s forwards linear;
+  &:hover 
+    opacity: 1
 
 @keyframes showFixed {
   from {
-    top -200px
-  } to {
-    top 0px
+    top: -50px;
+  }
+  to {
+    top: 0px;
   }
 }
 
 .button-menu
-  display flex
-  justify-content flex-end
-  .my-btn
-    height 35px
+  display: flex;
+  justify-content: flex-end;
+  .my-btn 
+    height: 35px
+
 </style>

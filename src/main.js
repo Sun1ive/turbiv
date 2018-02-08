@@ -14,6 +14,7 @@ import Information from './components/Templates/Infomation';
 import Form from './components/Shared/Form';
 import Button from './components/Shared/Button';
 import '../src/style/main.styl';
+import { i18n } from './locale';
 
 Vue.use(VueSwiper);
 Vue.use(Vuelidate);
@@ -37,11 +38,22 @@ Vue.config.productionTip = false;
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  i18n,
   router,
+  computed: {
+    locale() {
+      return this.$i18n.locale;
+    }
+  },
   mounted() {
+    if (window.localStorage.getItem('locale')) {
+      const locale = window.localStorage.getItem('locale');
+      this.$i18n.locale = locale;
+    }
     AOS.init({
-      offset: 200,
-      duration: 600
+      duration: 750,
+      // disable: 'mobile'
+      disable: () => window.innerWidth < 1024
     });
   },
   render: h => h(App),
