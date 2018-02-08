@@ -31,4 +31,12 @@ export default {
 
 .img
   margin-top: 5.5rem
+
+@media (max-width 1024px)
+  .inform
+    padding-top 1rem
+
+@media (max-width 600px)
+  .img
+    margin-top 1rem
 </style>

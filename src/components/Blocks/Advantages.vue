@@ -42,8 +42,7 @@ export default {
   width: 100%;
 
 .container-fluid
-  background-color: #fff;
-
+  background-color: #fff
 
 .advantage
   margin: 2rem 0;
@@ -57,4 +56,12 @@ export default {
     height 200px
     width 300px
 
+@media (max-width 1024px)
+  .advantages
+    position relative
+
+@media (max-width 600px)
+  .advantage
+    &__text
+      font-size 1.3rem
 </style>

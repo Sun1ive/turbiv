@@ -2,18 +2,18 @@
   <div class="wrapper">
     <div class="container-fluid">
       <div :class="{ reverse: reverse }" class="row align-items-center">
-        <div class="col col-6">
+        <div class="col-lg-6 col-md-6 col-sm-12">
           <div class="head-title">
             <slot name="head-title" />
           </div>
           <h1>
             <slot name="head" />
           </h1>
-          <p align="justify">
+          <p class="text__field" align="justify">
             <slot name="text" />
           </p>
         </div>
-        <div class="col">
+        <div class="col-lg-6 col-md-6 col-sm-12">
           <slot name="img" />
         </div>
       </div>
@@ -40,15 +40,22 @@ export default {
   .img
     width 100%
 
-.col-6
-  margin 5rem 3rem 5rem 0
-
 .reverse
   flex-direction row-reverse
-  .col-6
+  .col
     margin 5rem 0 5rem 3rem
 
 .head-title
   margin-bottom 1rem
+
+@media (max-width 775px)
+  .row
+    flex-direction column
+    .img
+      padding-bottom 3rem
+
+@media (max-width 500px)
+  .text__field
+    font-size 0.7rem
 
 </style>
