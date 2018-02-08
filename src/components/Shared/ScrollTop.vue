@@ -7,10 +7,10 @@
 <script>
 export default {
   mounted() {
-    window.addEventListener('scroll', this.scrollTop, { passive: true });
+    window.addEventListener('wheel', this.scrollTop, { passive: true });
   },
   beforeDestroy() {
-    window.removeEventListener('scroll', this.scrollTop);
+    window.removeEventListener('wheel', this.scrollTop);
   },
   methods: {
     scrollTop() {
