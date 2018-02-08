@@ -27,7 +27,7 @@ export default {
   z-index 2
 
 .inform
-  padding-top 15rem
+  padding 18rem 0 7rem 0
   &__img
     width 100%
 
@@ -36,9 +36,9 @@ export default {
 
 @media (max-width 1024px)
   .inform
-    padding-top 1rem
+    padding 1rem 0
     &__img
-      padding 1rem 0 2rem 0
+      padding 1rem 0
 
 @media (max-width 600px)
   .img
