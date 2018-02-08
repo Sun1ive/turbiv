@@ -18,10 +18,14 @@
 export default {
   computed: {
     advantages() {
-      if (this.$i18n.locale === 'ru') {
-        return this.$i18n.messages.ru.advantages
+      /* eslint-disable default-case */ /* eslint-disable no-unreachable */
+      switch (this.$root.locale) {
+        case 'en':
+          return this.$i18n.messages.en.advantages; break;
+        case 'ru':
+          return this.$i18n.messages.ru.advantages; break;
       }
-      return this.$i18n.messages.en.advantages
+      return this.$i18n.messages.ua.advantages;
     },
   },
 };

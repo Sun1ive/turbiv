@@ -38,10 +38,14 @@ export default {
   },
   computed: {
     contacts() {
-      if (this.$i18n.locale === 'ru') {
-        return this.$i18n.messages.ru.contacts;
+      /* eslint-disable default-case */ /* eslint-disable no-unreachable */
+      switch (this.$root.locale) {
+        case 'en':
+          return this.$i18n.messages.en.contacts; break;
+        case 'ru':
+          return this.$i18n.messages.ru.contacts; break;
       }
-      return this.$i18n.messages.en.contacts;
+      return this.$i18n.messages.ua.contacts;
     },
   },
 };

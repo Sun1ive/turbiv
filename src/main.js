@@ -40,6 +40,11 @@ new Vue({
   el: '#app',
   i18n,
   router,
+  computed: {
+    locale() {
+      return this.$i18n.locale;
+    }
+  },
   mounted() {
     if (window.localStorage.getItem('locale')) {
       const locale = window.localStorage.getItem('locale');

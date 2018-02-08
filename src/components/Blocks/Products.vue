@@ -27,10 +27,14 @@
 export default {
   computed: {
     products() {
-      if (this.$i18n.locale === 'ru') {
-        return this.$i18n.messages.ru.products
+      /* eslint-disable default-case */ /* eslint-disable no-unreachable */
+      switch (this.$root.locale) {
+        case 'en':
+          return this.$i18n.messages.en.products; break;
+        case 'ru':
+          return this.$i18n.messages.ru.products; break;
       }
-      return this.$i18n.messages.en.products
+      return this.$i18n.messages.ua.products;
     }
   }
 };

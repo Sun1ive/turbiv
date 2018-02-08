@@ -45,10 +45,14 @@ export default {
   }),
   computed: {
     menu() {
-      if (this.$i18n.locale === 'ru') {
-        return this.$i18n.messages.ru.menu;
+      /* eslint-disable default-case */ /* eslint-disable no-unreachable */
+      switch (this.$root.locale) {
+        case 'en':
+          return this.$i18n.messages.en.menu; break;
+        case 'ru':
+          return this.$i18n.messages.ru.menu; break;
       }
-      return this.$i18n.messages.en.menu;
+      return this.$i18n.messages.ua.menu;
     },
   },
   created() {
