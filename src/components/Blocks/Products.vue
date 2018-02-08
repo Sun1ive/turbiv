@@ -13,7 +13,7 @@
             v-for="item in products" 
             :key="item.title"
             data-aos="zoom-in"
-            data-aos-offset="600"
+            data-aos-offset="200"
             data-aos-easing="ease-in-sine"
           >
             <div 

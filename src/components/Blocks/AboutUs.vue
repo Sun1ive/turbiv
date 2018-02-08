@@ -5,7 +5,7 @@
       <template slot="head-title">{{ $t('about us') }}</template>
       <template slot="head">Nuvola</template>
       <template slot="text">{{ $t('company') }}</template>
-      <img slot="img" class="img" src="/static/blocks/team.jpg" alt="team">
+      <img slot="img" class="inform__img" src="/static/blocks/team.jpg" alt="team">
     </Information>
   </div>
 </template>
@@ -28,6 +28,8 @@ export default {
 
 .inform
   padding-top 15rem
+  &__img
+    width 100%
 
 .img
   margin-top: 5.5rem
@@ -35,6 +37,8 @@ export default {
 @media (max-width 1024px)
   .inform
     padding-top 1rem
+    &__img
+      padding 1rem 0 2rem 0
 
 @media (max-width 600px)
   .img

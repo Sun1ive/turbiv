@@ -55,9 +55,9 @@ export default {
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   width: 100%
 
-@media (max-width: 1300px)
+@media (max-width 500px)
   .slider-img
-    min-height: 500px
-
+    font-size 1.5rem
+    min-height 300px
 
 </style>

@@ -51,8 +51,6 @@ export default {
 @media (max-width 775px)
   .row
     flex-direction column
-    .img
-      padding-bottom 3rem
 
 @media (max-width 500px)
   .text__field
