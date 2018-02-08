@@ -21,7 +21,9 @@
 
 <style scoped lang="stylus">
 .contacts
-  padding 5rem 0
+  min-height 500px
+  display flex
+  align-items center
 .flex
   display flex
   align-items center

@@ -62,5 +62,7 @@
   "fill form": "For this we suggest you fill out the form:",
   "whosale title": "Wholesale of fabrics",
   "whosale one":
-    "For today, our company is actively working to attract large orders for the production of home textiles. And due to large lots of orders and personal arrangements with our fabric partners, we get an excellent price. If necessary, we are ready to consider the requests for wholesale of fabric in rolls and agree on further cooperation."
+    "For today, our company is actively working to attract large orders for the production of home textiles. And due to large lots of orders and personal arrangements with our fabric partners, we get an excellent price. If necessary, we are ready to consider the requests for wholesale of fabric in rolls and agree on further cooperation.",
+  "error email": "Please enter a valid e-mail",
+  "error phone": "Please enter a valid phone number"
 }

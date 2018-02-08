@@ -15,7 +15,7 @@
     <div 
       class="error" 
       v-if="$v.email.$error"
-    >Пожалуйста введите корректный e-mail</div>
+    >{{ $t('error email') }}</div>
     <input 
       type="email" 
       class="input"
@@ -26,7 +26,7 @@
     <div 
       class="error" 
       v-if="$v.phone.$error"
-    >Пожалуйста введите корректный телефон</div>
+    >{{ $t('error phone') }}</div>
     <input 
       type="number" 
       class="input"
