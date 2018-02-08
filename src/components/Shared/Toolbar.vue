@@ -140,14 +140,14 @@ export default {
   .my-btn 
     height: 35px
 
-@media (max-width 720px)
+@media (max-width 780px)
   .menu
     font-size .7rem
   .button-menu
     li
       button
-        width 170px
-        font-size 1rem
+        width 150px
+        font-size .9rem
     
 @media (max-width 575px)
   .menu
@@ -156,6 +156,6 @@ export default {
   .toolbar ul li:nth-child(2),
   .toolbar ul li:nth-child(4)
     margin 0 1rem
-  .menu
-    font-size .7rem
+
+
 </style>

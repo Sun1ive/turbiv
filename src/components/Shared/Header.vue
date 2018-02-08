@@ -70,12 +70,16 @@ export default {
 .col-sm-12
   text-align center
 
+@media (max-width 580px)
+  .row
+    .details
+      justify-content center
+
 @media (max-width 400px)
   .row
     .icon
       font-size 1.7rem
     .details
-      justify-content center
       font-size .8rem
 
 </style>
