@@ -2,7 +2,9 @@
   <div id="app">
     <Header @showModal="isActive = !isActive" />
     <transition name="fade" mode="out-in">
-      <router-view/>
+      <keep-alive>
+        <router-view />
+      </keep-alive>
     </transition>
     <Footer />
     <ScrollTop />

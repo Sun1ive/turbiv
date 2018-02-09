@@ -3,7 +3,7 @@
     <div class="wrapper">
       <div class="container-fluid">
         <div class="row align-items-center">
-          <div class="col col-7">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <swiper :options="swiperOptions">
               <swiper-slide 
                 v-for="item in items" 
@@ -17,13 +17,16 @@
               <div class="swiper-button-next" slot="button-next" />
             </swiper>
           </div>
-          <div class="col text">
-            <h1>{{ $t('bedroom products') }}</h1>
-            <p align="justify">{{ $t('bedroom one') }}</p>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <h1 class="bedroom__head">{{ $t('bedroom products') }}</h1>
+            <p class="bedroom__text" align="justify">{{ $t('bedroom one') }}</p>
             <br>
-            <p align="justify">{{ $t('cooperation') }}</p>
+            <p class="bedroom__text" align="justify">{{ $t('cooperation') }}</p>
             <p class="fillForm">{{ $t('fill form') }}</p>
-            <Button @click.native="isActive = !isActive" />
+            <Button
+              @click.native="isActive = !isActive"
+              class="bedroom__button"
+            />
           </div>
         </div>
       </div>
@@ -65,15 +68,16 @@ export default {
 
 <style scoped lang="stylus">
 .bedroom
-  min-height 80vh
-  display flex
-  align-items center
-  padding 5rem 0
-
-.slider-img
-  height 450px
-  background-size cover !important
-  background-repeat no-repeat !important
+  padding: 5rem 0
+  .row
+    min-height 60vh
+    text-align center
+    align-items center
+    justify-content space-around
+  .col-sm-12
+    text-align center
+    .fillForm
+      margin 1rem 0
 
 .text
   text-align center
@@ -88,4 +92,17 @@ export default {
 
 .icon
   margin-right 1rem
+
+@media (max-width 760px)
+  .bedroom
+    .row
+      justify-content center
+    &__text
+      font-size .8rem
+    &__head
+      font-size 1rem
+    &__button
+      width 150px
+      height 30px
+      font-size .9rem
 </style>

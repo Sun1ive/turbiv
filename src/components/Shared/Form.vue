@@ -97,6 +97,7 @@ export default {
     border 1px solid #c0c0c0
     padding 1rem
     margin 2px 0
+    width 100%
   .my-btn
     margin-top 1rem
 
@@ -117,4 +118,8 @@ export default {
   height 25px
   background-image url('/static/close.svg')
   cursor pointer
+
+@media (max-width 400px)
+  .form
+    padding 1rem
 </style>

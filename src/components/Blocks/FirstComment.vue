@@ -3,7 +3,7 @@
     <information 
       :reverse="true"
       data-aos="fade-up-left"
-      data-aos-offset="600"
+      data-aos-offset="200"
     >
       <template slot="head-title">{{ $t('reviews') }}</template>
       <template slot="head">{{ $t('andriy') }}</template>
@@ -17,5 +17,9 @@
 <style scoped lang="stylus">
 .htt-first
   padding: 3rem 0
+
+@media (max-width 770px)
+  .img
+    padding 2rem 0 0 0
 
 </style>

@@ -6,7 +6,7 @@
       <div 
         :style="{ background: 'url(' + item.src + ')' ,}" 
         class="slider-img"
-        v-text="item.text" />
+      >{{ $t(item.text) }}</div>
     </swiper-slide>
     <div class="swiper-button-prev" slot="button-prev" />
     <div class="swiper-button-next" slot="button-next" />
@@ -21,19 +21,19 @@ export default {
     items: [
       {
         src: '/static/slider/1.jpg',
-        text: 'Оперативный пошив крупных оптовых партий изделий «под ключ»',
+        text: 'first-slide',
       },
       {
         src: '/static/slider/5.jpg',
-        text: 'Исполнение заказа из материала заказчика',
+        text: 'second-slide',
       },
       {
         src: '/static/slider/3.jpg',
-        text: 'Производство небольших партий товаров (мелкий ОПТ)',
+        text: 'third-slide',
       },
       {
         src: '/static/slider/2.jpg',
-        text: 'Продажа ткани в рулонах',
+        text: 'fourth-slide',
       },
     ],
     swiperOptions,
@@ -55,9 +55,9 @@ export default {
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   width: 100%
 
-@media (max-width: 1300px)
+@media (max-width 500px)
   .slider-img
-    min-height: 500px
-
+    font-size 1.5rem
+    min-height 300px
 
 </style>

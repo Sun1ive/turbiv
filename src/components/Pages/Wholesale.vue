@@ -2,8 +2,8 @@
   <div class="wholesale">
     <div class="wrapper">
       <div class="container-fluid">
-        <div class="row align-items-center">
-          <div class="col col-7">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <swiper :options="swiperOptions">
               <swiper-slide 
                 v-for="item in items" 
@@ -17,7 +17,7 @@
               <div class="swiper-button-next" slot="button-next" />
             </swiper>
           </div>
-          <div class="col text">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <h1>{{ $t('whosale title') }}</h1>
             <p align="justify">{{ $t('whosale one') }}</p>
             <br>
@@ -55,36 +55,26 @@ export default {
 </script>
 
 <style scoped lang="stylus">
+
+
 .wholesale
-  min-height: 80vh;
-  display: flex;
-  align-items: center;
   padding: 5rem 0
-
-.slider-img
-  height: 450px
-  display: flex
-  align-items: center
-  justify-content: center
-  font-size: 5rem
-  color: #fff
-  text-align: center
-  font-weight: bold
-  background-size: cover !important
-  background-repeat: no-repeat !important
-
-.text 
-  text-align: center;
-  h1
-    margin-bottom: 2rem;
-  p 
-    text-indent: 3rem;
-  .fillForm 
-    text-align: center
-    text-indent: inherit
-    margin: 1rem 0
+  .row
+    min-height 60vh
+    text-align center
+    align-items center
+    justify-content space-around
+  .col-sm-12
+    text-align center
+    .fillForm
+      margin 1rem 0
 
 .icon
   margin-right: 1rem
+
+@media (max-width 760px)
+  .wholesale
+    .row
+      justify-content center
 
 </style>

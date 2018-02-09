@@ -1,18 +1,16 @@
 .slider-img
-  height: 500px
+  min-height 450px
+  background-position: center center !important
+  background-size cover !important
 
-@media (max-width 1500px)
-  .slider-img
-    height: 400px
+@media (max-width 500px)
+  .swiper-button-next, .swiper-button-prev
+    height 15px
 
-@media (max-width 1300px)
+@media (max-width 600px)
+  .swiper-slide
+    width 290px
+  
+@media (max-width 400px)
   .slider-img
-    height: 320px
-
-@media (max-width 1180px)
-  .slider-img
-    height: 300px
-
-@media (max-width 1100px)
-  .slider-img
-    height: 250px
+    min-height: 350px
