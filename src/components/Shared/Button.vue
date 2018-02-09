@@ -35,6 +35,7 @@ export default {
   justify-content: center
   align-items: center
   margin 0 auto
+  text-transform none !important
   &:hover
     cursor pointer
   .icon
@@ -42,8 +43,8 @@ export default {
 
 @media (max-width 400px)
   .my-btn
-    width 150px
+    width 160px
     height 30px
-    font-size 1rem
+    font-size .8rem
 
 </style>

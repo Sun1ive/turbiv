@@ -148,8 +148,8 @@ export default {
   .button-menu
     li
       button
-        width 150px
-        font-size .9rem
+        width 180px
+        font-size .8rem
     
 @media (max-width 575px)
   .menu

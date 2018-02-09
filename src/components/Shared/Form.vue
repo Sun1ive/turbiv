@@ -97,6 +97,7 @@ export default {
     border 1px solid #c0c0c0
     padding 1rem
     margin 2px 0
+    width 100%
   .my-btn
     margin-top 1rem
 
