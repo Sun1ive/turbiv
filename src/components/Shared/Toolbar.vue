@@ -26,14 +26,14 @@
           </div>
         </div>
       </div>
-      <!-- <ul class="lang">
+      <ul class="lang">
         <li 
           v-for="(locale, index) in locales" 
           :key="index"
           v-text="locale"
           @click="changeLang(locale)"
         />
-      </ul> -->
+      </ul>
     </div>
   </nav>
 </template>
