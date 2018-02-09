@@ -117,4 +117,8 @@ export default {
   height 25px
   background-image url('/static/close.svg')
   cursor pointer
+
+@media (max-width 400px)
+  .form
+    padding 1rem
 </style>

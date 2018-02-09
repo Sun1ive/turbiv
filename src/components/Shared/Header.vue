@@ -14,8 +14,8 @@
           <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 details" v-for="item in contacts" :key="item.title">
             <i class="icon material-icons" v-text="item.icon" />
             <div class="contact">
-              <p>{{ item.detailsOne }}</p>
-              <p>{{ item.detailsTwo }}</p>
+              <p><a class="tel" :href="`tel:${item.detailsOne}`">{{ item.detailsOne }}</a></p>
+              <p><a class="tel" :href="`tel:${item.detailsTwo}`">{{ item.detailsTwo }}</a></p>
             </div>
           </div>
         </div>
@@ -69,6 +69,9 @@ export default {
 
 .col-sm-12
   text-align center
+
+.tel
+  color #333
 
 @media (max-width 580px)
   .row

@@ -39,4 +39,11 @@ export default {
     cursor pointer
   .icon
     margin-right .7rem
+
+@media (max-width 400px)
+  .my-btn
+    width 150px
+    height 30px
+    font-size 1rem
+
 </style>
