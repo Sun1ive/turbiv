@@ -9,7 +9,7 @@
         </div>
         <div class="row justify-content-center">
           <div 
-            class="col-lg-6 col-md-6 col-sm-10 col-xs-12" 
+            class="product__wrapper col-lg-6 col-md-6 col-sm-10 col-xs-12" 
             v-for="item in products" 
             :key="item.title"
             data-aos="zoom-in"

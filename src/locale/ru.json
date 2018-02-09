@@ -36,12 +36,10 @@
       "detailsTwo": "Винницкая обл., Липовецкий р-н"
     }
   ],
-  "menu": [
-    { "title": "Главная", "el": "header", "icon": "home" },
-    { "title": "О Нас", "el": ".aboutUs", "icon": "star" },
-    { "title": "Контакты", "el": ".contacts", "icon": "star" },
-    { "title": "Наши товары", "el": ".products", "icon": "star" }
-  ],
+  "menu main": "Главная",
+  "menu about": "О нас",
+  "menu contacts": "Контакты",
+  "menu products": "Наши товары",
   "advantages": [
     { "src": "/static/advantages/1.jpg", "first": "Быстрое", "second": "исполнение заказа" },
     { "src": "/static/advantages/2.jpg", "first": "Конкурентные", "second": "цены" },

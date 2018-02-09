@@ -13,7 +13,7 @@
                   :key="button.title" 
                   flat
                   :to="button.path"
-                >{{ button.title }}</li>
+                >{{ $t(button.title) }}</li>
               </ul>
             </div>
             <div class="col-lg-6 col-md-5 col-sm-4">
@@ -30,9 +30,9 @@
         <li 
           v-for="(locale, index) in locales" 
           :key="index"
-          v-text="locale"
-          @click="changeLang(locale)"
-        />
+          @click="changeLang(locale, $event.target)"
+          class="lang__item"
+        >{{ locale }}</li>
       </ul>
     </div>
   </nav>
@@ -43,19 +43,13 @@ export default {
   data: () => ({
     locales: ['ru', 'en', 'ua'],
     fixed: false,
+    menu: [
+      { title: 'menu main', el: 'header', icon: 'home' },
+      { title: 'menu about', el: '.aboutUs', icon: 'star' },
+      { title: 'menu contacts', el: '.contacts', icon: 'star' },
+      { title: 'menu products', el: '.products', icon: 'star' },
+    ],
   }),
-  computed: {
-    menu() {
-      /* eslint-disable default-case */ /* eslint-disable no-unreachable */
-      switch (this.$root.locale) {
-        case 'en':
-          return this.$i18n.messages.en.menu; break;
-        case 'ru':
-          return this.$i18n.messages.ru.menu; break;
-      }
-      return this.$i18n.messages.ua.menu;
-    },
-  },
   created() {
     window.addEventListener('scroll', this.checkPos, { passive: true });
   },
@@ -81,9 +75,12 @@ export default {
         this.fixed = false;
       }
     },
-    changeLang(lang) {
+    changeLang(lang, target) {
+      const localeNodes = document.querySelectorAll('.lang__item');
       window.localStorage.setItem('locale', lang.toString());
       this.$i18n.locale = lang;
+      localeNodes.forEach(node => node.classList.remove('is-selected'));
+      target.classList.add('is-selected');
     },
   },
 };
@@ -98,8 +95,8 @@ export default {
   position: relative;
   .lang 
     position: absolute;
-    right: 40%
-    top: 0
+    right: 40%;
+    top: 0;
   ul
     padding: 0;
     margin: 0;
@@ -109,55 +106,77 @@ export default {
     li
       transition: 0.4s;
       &:nth-child(2)
-        margin: 0 2rem
+        margin: 0 2rem;
       &:nth-child(4)
-        margin-left 2rem
+        margin-left: 2rem;
       &:hover
         color: #0092D5;
         cursor: pointer;
 
-.fixed 
+.is-selected 
+  color: #006EAD
+  font-weight: bold;
+
+
+.fixed {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 3;
   transition: 0.5s ease;
   width: 100%;
-  animation: showFixed .5s forwards linear;
-  &:hover 
-    opacity: 1
+  animation: showFixed 0.5s forwards linear;
+
+  &:hover {
+    opacity: 1;
+  }
+}
 
 @keyframes showFixed {
   from {
     top: -50px;
   }
+
   to {
     top: 0px;
   }
 }
 
-.button-menu
+.button-menu {
   display: flex;
   justify-content: flex-end;
-  .my-btn 
-    height: 35px
 
-@media (max-width 780px)
-  .menu
-    font-size .7rem
-  .button-menu
-    li
-      button
-        width 180px
-        font-size .8rem
-    
-@media (max-width 575px)
-  .menu
-  .button-menu
-    justify-content center
-  .toolbar ul li:nth-child(2)
-    margin 0 1rem
-  .toolbar ul li:nth-child(4)
-    margin-left 0.5rem
+  .my-btn {
+    height: 35px;
+  }
+}
 
+@media (max-width: 780px) {
+  .menu {
+    font-size: 0.7rem;
+  }
+
+  .button-menu {
+    li {
+      button {
+        width: 180px;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .menu, .button-menu {
+    justify-content: center;
+  }
+
+  .toolbar ul li:nth-child(2) {
+    margin: 0 1rem;
+  }
+
+  .toolbar ul li:nth-child(4) {
+    margin-left: 0.5rem;
+  }
+}
 </style>

@@ -36,12 +36,10 @@
       "detailsTwo": "Vinnitsya region, Lipovets district"
     }
   ],
-  "menu": [
-    { "title": "Home", "el": "header", "icon": "home" },
-    { "title": "About us", "el": ".aboutUs", "icon": "star" },
-    { "title": "Contacts", "el": ".contacts", "icon": "star" },
-    { "title": "Our products", "el": ".products", "icon": "star" }
-  ],
+  "menu main": "Home",
+  "menu about": "About us",
+  "menu contacts": "Contacts",
+  "menu products": "Our products",
   "advantages": [
     { "src": "/static/advantages/1.jpg", "first": "Fast", "second": "order execution" },
     { "src": "/static/advantages/2.jpg", "first": "Competitive", "second": "prices" },

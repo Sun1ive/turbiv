@@ -36,12 +36,10 @@
       "detailsTwo": "Вінницька обл., Липовецький р-н"
     }
   ],
-  "menu": [
-    { "title": "Головна", "el": "header", "icon": "home" },
-    { "title": "Про нас", "el": ".aboutUs", "icon": "star" },
-    { "title": "Контакти", "el": ".contacts", "icon": "star" },
-    { "title": "Наші товари", "el": ".products", "icon": "star" }
-  ],
+  "menu main": "Головна",
+  "menu about": "Про нас",
+  "menu contacts": "Контакти",
+  "menu products": "Нашi вироби",
   "advantages": [
     { "src": "/static/advantages/1.jpg", "first": "Швидке", "second": "виконання замовлення" },
     { "src": "/static/advantages/2.jpg", "first": "Конкурентні", "second": "ціни" },
