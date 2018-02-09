@@ -18,8 +18,8 @@
 .htt-first
   padding: 3rem 0
 
-@media (max-width 700px)
+@media (max-width 770px)
   .img
-    margin-top 1rem
+    padding 2rem 0 0 0
 
 </style>

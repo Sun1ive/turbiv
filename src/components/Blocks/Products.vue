@@ -7,9 +7,9 @@
             <div class="head-title">{{ $t('some of our orders') }}</div>
           </div>
         </div>
-        <div class="row justify-content-between">
+        <div class="row justify-content-center">
           <div 
-            class="col" 
+            class="col-lg-6 col-md-6 col-sm-10 col-xs-12" 
             v-for="item in products" 
             :key="item.title"
             data-aos="zoom-in"
@@ -71,5 +71,9 @@ export default {
   &:hover
     color: #006ead
     text-shadow: 1px 1px 5px #fff
+
+@media (max-width 775px)
+  .col-sm-10
+    margin 1rem 0
 
 </style>

@@ -108,8 +108,10 @@ export default {
     min-height: 60px;
     li
       transition: 0.4s;
-      &:nth-child(2), &:nth-child(4)
+      &:nth-child(2)
         margin: 0 2rem
+      &:nth-child(4)
+        margin-left 2rem
       &:hover
         color: #0092D5;
         cursor: pointer;
@@ -153,9 +155,9 @@ export default {
   .menu
   .button-menu
     justify-content center
-  .toolbar ul li:nth-child(2),
-  .toolbar ul li:nth-child(4)
+  .toolbar ul li:nth-child(2)
     margin 0 1rem
-
+  .toolbar ul li:nth-child(4)
+    margin-left 0.5rem
 
 </style>

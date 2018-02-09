@@ -20,8 +20,9 @@
   .alex__img
     width 100%
 
-@media (max-width 500px)
+@media (max-width 770px)
   .alex__img
-    margin-top 1rem
+    padding 2rem 0 0 0
+
 
 </style>
