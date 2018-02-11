@@ -5,9 +5,11 @@
 </template>
 
 <script>
+import throttle from 'lodash/throttle';
+
 export default {
   mounted() {
-    window.addEventListener('wheel', this.scrollTop, { passive: true });
+    window.addEventListener('wheel', throttle(this.scrollTop, 750));
   },
   beforeDestroy() {
     window.removeEventListener('wheel', this.scrollTop);
@@ -30,7 +32,7 @@ export default {
 </script>
 
 <style scoped lang='stylus'>
-.scrolltop
+.scrolltop {
   width: 70px;
   height: 70px;
   background-color: #fff;
@@ -44,25 +46,33 @@ export default {
   transition: 0.4s linear;
   animation: topDown 2s linear infinite alternate;
   z-index: 15;
-  .icon
+
+  .icon {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 5rem;
-  &:hover
+  }
+
+  &:hover {
     background-color: rgba(0, 159, 227, 1);
     opacity: 1;
     transition: 0.4s linear;
     animation-play-state: paused;
     border-color: rgba(0, 159, 227, 1);
-    .icon
-      color: #fff;
 
-.visible
+    .icon {
+      color: #fff;
+    }
+  }
+}
+
+.visible {
   display: block;
   bottom: 9%;
-  right: 30px
+  right: 30px;
+}
 
 @keyframes topDown {
   from {
@@ -74,11 +84,14 @@ export default {
   }
 }
 
-@media (max-width: 400px)
-  .scrolltop
-    height: 65px
-    width: 65px
-  .visible 
-    bottom: 11%
+@media (max-width: 400px) {
+  .scrolltop {
+    height: 65px;
+    width: 65px;
+  }
 
+  .visible {
+    bottom: 11%;
+  }
+}
 </style>

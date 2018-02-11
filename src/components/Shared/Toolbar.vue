@@ -39,6 +39,8 @@
 </template>
 
 <script>
+import throttle from 'lodash/throttle';
+
 export default {
   data: () => ({
     locales: ['ru', 'en', 'ua'],
@@ -51,7 +53,7 @@ export default {
     ],
   }),
   created() {
-    window.addEventListener('scroll', this.checkPos, { passive: true });
+    window.addEventListener('scroll', throttle(this.checkPos));
   },
   beforeDestroy() {
     window.removeEventListener('scroll', this.checkPos);
