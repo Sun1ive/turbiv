@@ -50,15 +50,12 @@ export default {
 </script>
 
 <style scoped lang="stylus">
-.products {
+.products 
   padding: 3rem 0;
-
-  .head-title {
-    margin-bottom: 2rem;
-  }
-}
-
-.product {
+  .head-title
+    margin-bottom: 2rem
+  
+.product
   display: flex;
   width: 100%;
   height: 500px;
@@ -72,16 +69,17 @@ export default {
   z-index: 2;
   transition: 0.4s linear;
   font-weight: bold;
-
-  &:hover {
+  &:hover
     color: #006ead;
-    text-shadow: 1px 1px 5px #fff;
-  }
-}
+    text-shadow: 1px 1px 5px #fff
 
-@media (max-width: 775px) {
-  .col-sm-10 {
-    margin: 1rem 0;
-  }
-}
+@media (max-width: 775px) 
+  .col-sm-10
+    margin: 1rem 0
+
+@media (max-width 500px)
+  .product
+    font-size 1.4rem
+    height 300px
+
 </style>

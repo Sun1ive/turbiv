@@ -1,8 +1,8 @@
 <template>
   <footer>
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-4">
+      <div class="row justify-content-center">
+        <div class="col-12">
           <a href="https://nuvola.com.ua" target="_blank">&copy; Nuvola</a>
         </div>
       </div>

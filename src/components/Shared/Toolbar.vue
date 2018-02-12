@@ -118,9 +118,7 @@ export default {
 .is-selected 
   color: #006EAD
   font-weight: bold;
-
-
-.fixed {
+.fixed
   position: fixed;
   top: 0;
   left: 0;
@@ -128,11 +126,9 @@ export default {
   transition: 0.5s ease;
   width: 100%;
   animation: showFixed 0.5s forwards linear;
-
-  &:hover {
+  &:hover
     opacity: 1;
-  }
-}
+
 
 @keyframes showFixed {
   from {
@@ -144,41 +140,32 @@ export default {
   }
 }
 
-.button-menu {
+.button-menu
   display: flex;
   justify-content: flex-end;
-
-  .my-btn {
+  .my-btn
     height: 35px;
-  }
-}
 
-@media (max-width: 780px) {
-  .menu {
+
+@media (max-width: 780px) 
+  .menu 
     font-size: 0.7rem;
-  }
-
-  .button-menu {
-    li {
-      button {
+  .button-menu
+    li
+      button
         width: 180px;
         font-size: 0.8rem;
-      }
-    }
-  }
-}
 
-@media (max-width: 575px) {
-  .menu, .button-menu {
-    justify-content: center;
-  }
-
-  .toolbar ul li:nth-child(2) {
+@media (max-width: 575px)
+  .menu
+    justify-content: center
+  .toolbar ul li:nth-child(2) 
     margin: 0 1rem;
-  }
-
-  .toolbar ul li:nth-child(4) {
+  .toolbar ul li:nth-child(4)
     margin-left: 0.5rem;
-  }
-}
+  .lang
+    left 15px
+    bottom -55px
+    font-size .9rem
+
 </style>

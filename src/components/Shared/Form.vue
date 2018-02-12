@@ -119,7 +119,12 @@ export default {
   background-image url('/static/close.svg')
   cursor pointer
 
-@media (max-width 400px)
+@media (max-width 500px)
   .form
     padding 1rem
+    &__header
+      font-size 1.3rem
+    .error
+      font-size .8rem
+      text-align center
 </style>

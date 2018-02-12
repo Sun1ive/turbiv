@@ -46,6 +46,8 @@
     justify-content space-between
     .text
       margin 0
+      font-size .8rem
+      margin-top 2rem
   .row
     padding 0
 
